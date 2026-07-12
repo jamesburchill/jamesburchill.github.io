@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Parked Project | James Burchill</title>
+  <meta name="description" content="This project is parked. Nicely between the lines, naturally.">
+  <meta name="theme-color" content="#080d14">
+  <link rel="canonical" href="https://jamesburchill.com/parkedproject/">
+
+  <meta property="og:title" content="Parked Project">
+  <meta property="og:description" content="This project is parked. Nicely between the lines, naturally.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jamesburchill.com/parkedproject/">
+  <meta property="og:image" content="https://jamesburchill.com/parkedproject/parked-project.jpg">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <meta property="og:image:alt" content="A mobile project desk parked in a garage beneath a Parked Project sign">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="/parkedproject/parked-project.jpg" media="(orientation: landscape)">
+  <link rel="preload" as="image" href="/parkedproject/parked-project-mobile.jpg" media="(orientation: portrait)">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body,
+    main,
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+
+    html {
+      background: #080d14;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      margin: 0;
+      overflow: hidden;
+      background: #080d14;
+    }
+
+    picture {
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 class="visually-hidden">Parked Project</h1>
+    <picture>
+      <source media="(orientation: portrait)" srcset="/parkedproject/parked-project-mobile.jpg">
+      <img src="/parkedproject/parked-project.jpg" alt="A project desk parked neatly in a garage beneath a glowing Parked Project sign" width="1672" height="941" fetchpriority="high">
+    </picture>
+  </main>
+</body>
+</html>
