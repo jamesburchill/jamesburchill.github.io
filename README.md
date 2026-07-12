@@ -2,7 +2,10 @@
 
 Static source for [jamesburchill.com](https://jamesburchill.com/), hosted with GitHub Pages.
 
-The site is intentionally small: a positioning page for James Burchill, linking out to the Vault, Because Drift Happens™, and LinkedIn, plus a full-screen illustrated page for parked projects at `/parkedproject/`.
+The site is intentionally small: a positioning page for James Burchill, linking out to the Vault, Because Drift Happens™, and LinkedIn, plus these standalone pages:
+
+- `/parkedproject/`: a full-screen illustrated page for parked projects
+- `/games/spaceshooter/`: a browser-based, side-scrolling pixel-art game
 
 ## Deployment
 

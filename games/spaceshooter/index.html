@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07111f" />
+    <title>Space Shooter | James Burchill</title>
+    <meta name="description" content="A browser-based, side-scrolling pixel-art space shooter." />
+    <link rel="canonical" href="https://jamesburchill.com/games/spaceshooter/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header><span>SPACE SHOOTER</span><small>PIXEL CANVAS ARCADE</small></header>
+      <div class="canvas-frame">
+        <canvas id="game" width="1280" height="720" aria-label="Space Shooter game"></canvas>
+      </div>
+      <p class="controls">MOVE <kbd>WASD</kbd> / <kbd>ARROWS</kbd> &nbsp; FIRE <kbd>SPACE</kbd> &nbsp; QUIT <kbd>Q</kbd> &nbsp; RESTART <kbd>R</kbd></p>
+    </main>
+    <script src="js/entities.js?v=13"></script>
+    <script src="js/game.js?v=12"></script>
+    <script src="js/renderer.js?v=18"></script>
+    <script src="js/audio.js?v=11"></script>
+    <script src="js/main.js?v=5"></script>
+  </body>
+</html>
