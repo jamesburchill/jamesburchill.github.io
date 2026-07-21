@@ -3,228 +3,316 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>James Burchill -- Governing Intelligent Systems | Because Drift Happens™</title>
-  <meta name="description" content="Designing, building, and governing AI-enabled software, automation, and intelligent systems without losing operational control.">
+  <title>James Burchill — Governing Intelligent Systems | Because Drift Happens™</title>
+  <meta name="description" content="James Burchill designs systems that help organizations remain coherent as software, AI, and operational complexity accelerate.">
+  <meta name="theme-color" content="#081019">
   <link rel="canonical" href="https://jamesburchill.com/">
 
-  <meta property="og:title" content="James Burchill -- Governing Intelligent Systems">
-  <meta property="og:description" content="Designing, building, and governing AI-enabled software, automation, and intelligent systems without losing operational control.">
+  <meta property="og:title" content="James Burchill — Governing Intelligent Systems">
+  <meta property="og:description" content="Designing systems that remain coherent, governable, and trustworthy as software, AI, and operational complexity accelerate.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jamesburchill.com/">
-  <meta property="og:image" content="https://jamesburchill.com/icon.png">
-  <meta property="og:image:alt" content="James C. Burchill">
+  <meta property="og:image" content="https://jamesburchill.com/img/james-burchill-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="James Burchill — Governing Intelligent Systems. Because Drift Happens.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="James Burchill — Governing Intelligent Systems">
+  <meta name="twitter:description" content="Designing systems that remain coherent, governable, and trustworthy as complexity accelerates.">
+  <meta name="twitter:image" content="https://jamesburchill.com/img/james-burchill-og.png">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
 
-  <style>
-    :root {
-      --bg: #0b0f14;
-      --panel: #0f1620;
-      --text: #e7edf6;
-      --muted: #a9b7c8;
-      --line: rgba(231, 237, 246, .14);
-      --shadow: 0 12px 40px rgba(0, 0, 0, .45);
-      --radius: 18px;
-      --max: 980px;
-      --card-max: 760px;
-      --accent: #7dd3fc;
-      --accent2: #a78bfa;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      min-height: 100%;
-    }
-
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.45;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .wrap {
-      width: 100%;
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 56px 18px 48px;
-    }
-
-    .card {
-      max-width: var(--card-max);
-      margin: 0 auto;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background:
-        radial-gradient(1200px 600px at 15% -10%, rgba(125, 211, 252, .18), transparent 60%),
-        radial-gradient(1000px 600px at 85% 0%, rgba(167, 139, 250, .16), transparent 55%),
-        radial-gradient(900px 600px at 50% 120%, rgba(125, 211, 252, .10), transparent 55%),
-        linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02));
-      box-shadow: var(--shadow);
-    }
-
-    .hero {
-      padding: 34px 34px 18px;
-      text-align: center;
-    }
-
-    .kicker {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin: 0 0 10px;
-      font-size: 14px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .dot {
-      width: 9px;
-      height: 9px;
-      flex: 0 0 auto;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 4px rgba(125, 211, 252, .12);
-    }
-
-    .avatar {
-      display: block;
-      width: 88px;
-      height: 88px;
-      margin: 8px auto 18px;
-      border: 1px solid rgba(231, 237, 246, .18);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .04);
-      object-fit: cover;
-      filter: saturate(.92) contrast(.98);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(30px, 4vw, 44px);
-      letter-spacing: -.02em;
-    }
-
-    h2 {
-      margin: 0 0 8px;
-      font-size: clamp(22px, 3vw, 30px);
-      letter-spacing: 0;
-    }
-
-    h3 {
-      margin: 12px 0 0;
-      font-size: clamp(15px, 2vw, 18px);
-      font-weight: 600;
-      letter-spacing: 0;
-      color: var(--muted);
-    }
-
-    .positioning {
-      max-width: 44rem;
-      margin: 14px auto 0;
-      font-size: clamp(15px, 2vw, 17px);
-      color: var(--muted);
-    }
-
-    .btnrow {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin: 18px auto 16px;
-    }
-
-    .btn,
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      min-height: 43px;
-      padding: 9px 14px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .03);
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      user-select: none;
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
-    }
-
-    .btn:hover,
-    .chip:hover {
-      border-color: rgba(231, 237, 246, .22);
-      background: rgba(255, 255, 255, .06);
-      transform: translateY(-1px);
-    }
-
-    .btn.primary {
-      border-color: rgba(125, 211, 252, .35);
-      background: linear-gradient(135deg, rgba(125, 211, 252, .16), rgba(167, 139, 250, .12));
-    }
-
-    .btn.secondary {
-      border-color: rgba(231, 237, 246, .16);
-      background: rgba(255, 255, 255, .02);
-    }
-
-    @media (max-width: 520px) {
-      .wrap {
-        padding: 24px 12px;
-      }
-
-      .hero {
-        padding: 28px 20px 16px;
-      }
-
-      .btnrow {
-        align-items: stretch;
-        flex-direction: column;
-      }
-
-      .btn,
-      .chip {
-        width: 100%;
-      }
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "James Burchill",
+    "url": "https://jamesburchill.com/",
+    "image": "https://jamesburchill.com/img/avatar.jpg",
+    "jobTitle": "CTO and Systems Architect",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Tooljar",
+      "url": "https://tooljar.com/"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/jamesburchill/",
+      "https://github.com/jamesburchill"
+    ],
+    "knowsAbout": [
+      "Enterprise architecture",
+      "AI governance",
+      "Semantic systems",
+      "Software platforms",
+      "Operational intelligence",
+      "Technical leadership"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <main class="wrap">
-    <section class="card" aria-label="James Burchill landing page">
-      <div class="hero">
-        <p class="kicker"><span class="dot" aria-hidden="true"></span> James Burchill</p>
-        <img class="avatar" src="/img/avatar.jpg" alt="James Burchill">
-        <h1>Governing Intelligent Systems</h1>
-        <h2>Because Drift Happens™</h2>
-        <p class="positioning">Drift is the default condition of all systems. I design, build, and govern AI-enabled software, automation, and intelligent systems so they stay observable, accountable, recoverable, and aligned with real-world intent. My work sits at the intersection of CTO leadership, hands-on system design, AI governance, operational coherence, provenance, and control systems.</p>
-        <h3>CTO, Tooljar<br>Former VP, Software Engineering<br>Givex and Shift4</h3>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-        <div class="btnrow" role="group" aria-label="Primary links">
-          <a class="btn primary" href="https://vault.jamesburchill.com">Read the Vault</a>
-          <a class="btn secondary" href="https://becausedrifthappens.com/">Because Drift Happens™</a>
-          <a class="chip" href="https://www.linkedin.com/in/jamesburchill/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="James Burchill, home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>James Burchill</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#tooljar">Tooljar</a>
+        <a href="#engagements">Engagements</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="nav-cta" href="https://vault.jamesburchill.com/">Read the Vault <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> CTO · Systems Architect</p>
+          <h1>Governing<br><em>Intelligent Systems</em></h1>
+          <p class="hero-lede">I design systems that help organizations remain coherent as software, AI, and operational complexity accelerate.</p>
+          <p class="hero-proof">CTO at Tooljar. Four decades building software companies, leading engineering organizations, and creating enduring intellectual property.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://vault.jamesburchill.com/">Read the Vault <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="signature">Because Drift Happens™</p>
+        </div>
+
+        <div class="hero-visual" aria-label="A governed system maintains alignment between intent, operation, evidence, and correction">
+          <div class="portrait-wrap">
+            <img src="/img/avatar.jpg" alt="James Burchill" width="700" height="700">
+            <span class="portrait-label">James Burchill</span>
+          </div>
+          <div class="system-map" aria-hidden="true">
+            <div class="system-map-head">
+              <span>System coherence</span>
+              <span class="status"><i></i> Maintained</span>
+            </div>
+            <ol>
+              <li><span>01</span><strong>Intent</strong><small>Make purpose explicit</small></li>
+              <li><span>02</span><strong>Operation</strong><small>Observe the real system</small></li>
+              <li><span>03</span><strong>Evidence</strong><small>Preserve provenance</small></li>
+              <li><span>04</span><strong>Correction</strong><small>Recover alignment</small></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div class="container manifesto-grid">
+        <p class="section-label">The enduring problem</p>
+        <div>
+          <h2 id="manifesto-title">Technology changes.<br>Coherence still matters.</h2>
+          <div class="manifesto-copy">
+            <p>Architectures evolve. Companies grow. Decisions accumulate. The need for systems that people can understand, govern, and trust does not disappear.</p>
+            <p>Intelligence alone is not enough. The organizations that endure will be the ones that can maintain alignment as their systems change.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">What I build</p>
+            <h2 id="work-title">Systems that create<br>lasting leverage.</h2>
+          </div>
+          <p>I focus on durable capability rather than temporary output—systems that make complexity manageable, decisions clearer, and organizations more resilient.</p>
+        </div>
+
+        <div class="pillar-grid">
+          <article class="pillar">
+            <span class="pillar-number">01</span>
+            <h3>Governed intelligence</h3>
+            <p>AI-enabled systems with explicit boundaries, observable behaviour, accountable decisions, and a path back to human intent.</p>
+            <ul>
+              <li>AI governance</li>
+              <li>Control systems</li>
+              <li>Operational intelligence</li>
+            </ul>
+          </article>
+          <article class="pillar">
+            <span class="pillar-number">02</span>
+            <h3>Semantic coherence</h3>
+            <p>Architectures that preserve meaning across changing software, workflows, teams, and organizational boundaries.</p>
+            <ul>
+              <li>Semantic systems</li>
+              <li>Provenance</li>
+              <li>Organizational scalability</li>
+            </ul>
+          </article>
+          <article class="pillar">
+            <span class="pillar-number">03</span>
+            <h3>Enduring platforms</h3>
+            <p>Software platforms and intellectual property designed to compound in capability and value long after the first release.</p>
+            <ul>
+              <li>Enterprise architecture</li>
+              <li>SaaS platforms</li>
+              <li>Product strategy</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" aria-labelledby="systems-title">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-label">Ideas and systems</p>
+            <h2 id="systems-title">From doctrine<br>to governed execution.</h2>
+          </div>
+          <p>Independent work exploring how intelligent systems can remain bounded, observable, recoverable, and trustworthy.</p>
+        </div>
+
+        <div class="work-grid">
+          <a class="work-card work-card-featured" href="https://becausedrifthappens.com/">
+            <div class="work-card-top"><span>Doctrine</span><span aria-hidden="true">↗</span></div>
+            <div>
+              <h3>Because Drift Happens™</h3>
+              <p>A practical doctrine for building systems that expect change, expose divergence, and recover alignment.</p>
+            </div>
+          </a>
+
+          <a class="work-card work-card-featured vault-card" href="https://vault.jamesburchill.com/">
+            <div class="work-card-top"><span>Practical guidance</span><span aria-hidden="true">↗</span></div>
+            <div>
+              <h3>The Vault</h3>
+              <p>Essays, field notes, and working ideas about systems, intelligence, governance, and operational coherence.</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="https://safeagent.ca/">
+            <div class="work-card-top"><span>Governed execution</span><span aria-hidden="true">↗</span></div>
+            <div>
+              <h3>SafeAgent</h3>
+              <p>A reference control plane for containing, approving, and recording autonomous execution.</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="https://github.com/jamesburchill/verifiedprovenance">
+            <div class="work-card-top"><span>Provenance</span><span aria-hidden="true">↗</span></div>
+            <div>
+              <h3>Verified Provenance</h3>
+              <p>An open-source trust layer for proving who created digital content and whether it has changed.</p>
+            </div>
+          </a>
+
+          <a class="work-card" href="https://github.com/jamesburchill/aifed">
+            <div class="work-card-top"><span>Federation</span><span aria-hidden="true">↗</span></div>
+            <div>
+              <h3>AIFED</h3>
+              <p>An open protocol exploration for discovery, trust, and workload federation between sovereign AI operators.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section role-section" id="tooljar" aria-labelledby="tooljar-title">
+      <div class="container role-grid">
+        <div class="role-intro">
+          <p class="section-label">Current work</p>
+          <p class="role-kicker">CTO, Tooljar</p>
+          <h2 id="tooljar-title">Building software that can scale without losing coherence.</h2>
+        </div>
+        <div class="role-copy">
+          <p>At Tooljar, I focus on platform architecture, technical governance, AI strategy, and the systems required to turn complex work into accountable outcomes.</p>
+          <p>The role brings the same concerns into a living platform: make the real process visible, preserve context, clarify ownership, and keep the system aligned as the organization grows.</p>
+          <a class="text-link" href="https://tooljar.com/">Visit Tooljar <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section engagements-section" id="engagements" aria-labelledby="engagements-title">
+      <div class="container">
+        <div class="engagement-panel">
+          <div class="engagement-intro">
+            <p class="section-label">Selected engagements</p>
+            <h2 id="engagements-title">I do not sell hours.<br><em>I partner on defined outcomes.</em></h2>
+            <p>I accept a small number of strategic engagements each year where the problem is technically significant, the outcome is clear, and the work can create enduring value.</p>
+          </div>
+
+          <div class="fit-grid">
+            <div class="fit-column fit-good">
+              <h3><span aria-hidden="true">+</span> A good fit</h3>
+              <ul>
+                <li>A consequential architecture, AI, platform, or product problem</li>
+                <li>A defined decision-maker and intended outcome</li>
+                <li>Work that creates an enduring asset or organizational capability</li>
+              </ul>
+            </div>
+            <div class="fit-column fit-not">
+              <h3><span aria-hidden="true">—</span> Not a fit</h3>
+              <ul>
+                <li>Hourly troubleshooting or staff augmentation</li>
+                <li>Open-ended advisory retainers</li>
+                <li>Projects without an accountable owner or defined outcome</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="engagement-cta">
+            <p>If the outcome matters enough to warrant senior attention, start with the problem.</p>
+            <a class="button button-light" href="https://www.linkedin.com/in/jamesburchill/" target="_blank" rel="noopener noreferrer">Discuss an engagement <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2 id="about-title">The titles change.<br>The work remains.</h2>
+        </div>
+        <div class="about-copy">
+          <p class="about-lede">Technology has never been my end goal. Building systems that remain coherent as they grow has.</p>
+          <p>For more than four decades, I have worked where technology, business, and human decision-making intersect. I have founded companies, led engineering teams, architected enterprise platforms, and helped organizations navigate significant technological change.</p>
+          <p>My career includes senior software leadership with Givex and Shift4. Today, my work spans Tooljar, independent intellectual property, and a limited number of strategically aligned engagements.</p>
+          <div class="focus-list" aria-label="Areas of focus">
+            <span>Enterprise architecture</span>
+            <span>AI governance</span>
+            <span>Semantic systems</span>
+            <span>Software platforms</span>
+            <span>Product strategy</span>
+            <span>Technical leadership</span>
+            <span>Operational intelligence</span>
+            <span>Organizational scalability</span>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">James Burchill</p>
+        <p>Governing Intelligent Systems</p>
+      </div>
+      <p class="footer-signature">Because Drift Happens™</p>
+      <div class="footer-links">
+        <a href="https://vault.jamesburchill.com/">Vault</a>
+        <a href="https://github.com/jamesburchill" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jamesburchill/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
