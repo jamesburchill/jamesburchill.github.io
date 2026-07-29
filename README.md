@@ -20,6 +20,10 @@ These special projects remain available independently and are intentionally not 
 - `/games/`: the browser-game catalogue
 - `/games/spaceshooter/`: a browser-based, side-scrolling pixel-art game
 
+The main site also includes a product page:
+
+- `/driftinel/`: the Driftinel™ operational-awareness product introduction
+
 ## Local preview
 
 From the repository root:

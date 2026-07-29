@@ -598,6 +598,43 @@ h1 em,
     linear-gradient(145deg, #211e36, #121725);
 }
 
+.driftinel-card {
+  position: relative;
+  grid-column: span 6;
+  min-height: 330px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(128, 214, 176, .22), transparent 30%),
+    radial-gradient(circle at 68% 105%, rgba(125, 211, 252, .14), transparent 34%),
+    linear-gradient(145deg, #14302e, #0c1b27 68%);
+}
+
+.driftinel-card::after {
+  position: absolute;
+  right: 9%;
+  bottom: -94px;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(128, 214, 176, .18);
+  border-radius: 50%;
+  box-shadow: 0 0 0 50px rgba(128, 214, 176, .025), 0 0 0 100px rgba(125, 211, 252, .018);
+  content: "";
+}
+
+.driftinel-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.driftinel-card h3 {
+  color: var(--green);
+}
+
+.driftinel-card p {
+  max-width: 680px;
+  font-size: 18px;
+}
+
 .work-card-top {
   display: flex;
   justify-content: space-between;
@@ -931,8 +968,13 @@ button:focus-visible {
   }
 
   .work-card,
-  .work-card-featured {
+  .work-card-featured,
+  .driftinel-card {
     grid-column: span 3;
+  }
+
+  .driftinel-card {
+    grid-column: span 6;
   }
 }
 
@@ -1032,7 +1074,8 @@ button:focus-visible {
   }
 
   .work-card,
-  .work-card-featured {
+  .work-card-featured,
+  .driftinel-card {
     grid-column: span 1;
     min-height: 290px;
   }
