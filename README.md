@@ -5,8 +5,8 @@ Static source for [jamesburchill.com](https://jamesburchill.com/), hosted with G
 The site is a one-page professional profile for James Burchill centred on Governing Intelligent Systems and Because Drift Happens™. It presents:
 
 - the systems and intellectual property James builds;
+- Driftinel™ as the flagship product, supported by the Because Drift Happens™ doctrine and The Vault;
 - his current CTO role at Tooljar;
-- selected public projects and writing;
 - the criteria for limited strategic engagements; and
 - his leadership background and areas of focus.
 
