@@ -779,8 +779,8 @@ h1 em,
   color: var(--green);
 }
 
-.fit-not h3 span {
-  color: #e29b9b;
+.fit-method h3 span {
+  color: var(--cyan);
 }
 
 .fit-column ul {
