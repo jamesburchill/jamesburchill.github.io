@@ -13,7 +13,7 @@
 
 .driftinel-hero {
   position: relative;
-  min-height: 870px;
+  min-height: 960px;
   overflow: hidden;
   color: var(--white);
   background:
@@ -52,10 +52,10 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, .8fr);
   align-items: center;
-  gap: 78px;
-  min-height: 870px;
+  gap: 64px;
+  min-height: 960px;
   padding-top: 120px;
   padding-bottom: 72px;
 }
@@ -78,44 +78,51 @@
   background: linear-gradient(to right, var(--green), var(--cyan));
 }
 
-.driftinel-hero h1 {
-  margin-bottom: 12px;
+.product-name {
+  margin: 0 0 16px;
   color: var(--green);
-  font-size: clamp(62px, 8vw, 112px);
+  font-size: 25px;
+  font-weight: 720;
+  letter-spacing: -.02em;
 }
 
-.driftinel-hero h1 sup {
+.product-name sup {
   position: relative;
   top: -.43em;
-  margin-left: 4px;
+  margin-left: 2px;
   font-family: var(--sans);
-  font-size: .22em;
+  font-size: .44em;
   font-weight: 650;
   letter-spacing: 0;
 }
 
-.product-promise {
-  margin: 0 0 28px;
+.driftinel-hero h1 {
+  max-width: 760px;
+  margin-bottom: 26px;
   color: var(--white);
-  font-size: clamp(30px, 3.5vw, 47px);
-  font-weight: 670;
-  line-height: 1.12;
-  letter-spacing: -.035em;
-}
-
-.product-promise em {
-  color: var(--cyan);
-  font-family: var(--serif);
-  font-weight: 400;
+  font-size: clamp(44px, 4.6vw, 64px);
+  font-weight: 690;
+  line-height: 1.04;
+  letter-spacing: -.047em;
 }
 
 .product-lede {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0;
   color: #c8d9d4;
-  font-size: clamp(19px, 2vw, 24px);
+  font-size: clamp(18px, 1.65vw, 21px);
   line-height: 1.48;
   letter-spacing: -.015em;
+}
+
+.product-outcome {
+  max-width: 700px;
+  margin: 24px 0 0;
+  padding-left: 18px;
+  border-left: 2px solid rgba(128, 214, 176, .5);
+  color: #a9c0b9;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .observation-map {
@@ -268,6 +275,10 @@
   align-items: start;
 }
 
+.product-intro#attention .section-heading {
+  margin-bottom: 0;
+}
+
 .intro-copy p {
   margin: 0 0 20px;
   color: var(--muted);
@@ -276,7 +287,7 @@
 
 .observation-steps {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--line);
 }
 
@@ -306,7 +317,7 @@
 .observation-steps h3 {
   margin-bottom: 14px;
   color: #17342e;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .observation-steps p {
@@ -532,8 +543,10 @@
   font-size: 11px;
 }
 
-#what,
+#attention,
 #observations,
+#how,
+#awareness,
 #difference {
   scroll-margin-top: 72px;
 }
@@ -550,6 +563,23 @@
 
   .signal-item small {
     display: none;
+  }
+
+  .observation-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .observation-steps article:nth-child(2) {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .observation-steps article:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .observation-steps article:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
   }
 
   .significance-grid,
@@ -583,7 +613,7 @@
   }
 
   .driftinel-hero h1 {
-    font-size: clamp(58px, 19vw, 90px);
+    font-size: clamp(42px, 11.5vw, 62px);
   }
 
   .observation-map {
