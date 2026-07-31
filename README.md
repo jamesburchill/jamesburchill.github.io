@@ -1,28 +1,18 @@
-# jamesburchill.github.io
+# jamesburchill.com
 
-Static source for [jamesburchill.com](https://jamesburchill.com/), hosted with GitHub Pages.
+Static source for [jamesburchill.com](https://jamesburchill.com), hosted with GitHub Pages.
 
-The site is a one-page professional profile for James Burchill centred on Governing Intelligent Systems and Because Drift Happens™. It presents:
+The site presents the work of James Burchill across technology leadership, intelligent systems, and selected strategic engagements.
 
-- the systems and intellectual property James builds;
-- Driftinel™ as the flagship product, supported by the Because Drift Happens™ doctrine and The Vault;
-- his current CTO role at Tooljar;
-- the criteria for limited strategic engagements; and
-- his leadership background and areas of focus.
+Its public centre of gravity is:
+
+- [Driftinel](https://driftinel.com) — operational awareness for fewer surprises;
+- [Because Drift Happens](https://becausedrifthappens.com) — the doctrine behind the work; and
+- [The Vault](https://vault.jamesburchill.com) — field notes, working ideas, and evidence from the journey.
+
+The site also reflects James's current role as CTO at Tooljar, his leadership background, and the criteria for limited strategic engagements.
 
 The implementation is intentionally dependency-free: semantic HTML, a single stylesheet, and static image assets.
-
-## Standalone project routes
-
-These special projects remain available independently and are intentionally not linked from the main professional site:
-
-- `/parkedproject/`: a full-screen illustrated page for parked projects
-- `/games/`: the browser-game catalogue
-- `/games/spaceshooter/`: a browser-based, side-scrolling pixel-art game
-
-The main site also includes a product page:
-
-- `/driftinel/`: the Driftinel™ operational-awareness product introduction
 
 ## Local preview
 
@@ -38,4 +28,5 @@ Then open [http://localhost:8000](http://localhost:8000).
 
 - GitHub Pages publishes from the `main` branch.
 - `CNAME` sets the custom domain to `jamesburchill.com`.
+- The Driftinel product page is served from `/driftinel/`, with [driftinel.com](https://driftinel.com) as its public address.
 - The production domain is served by GitHub Pages.
