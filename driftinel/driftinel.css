@@ -1,4 +1,5 @@
 .product-page {
+  --muted: #52645f;
   background: #eef2ec;
 }
 
@@ -9,6 +10,10 @@
 .product-header .brand-mark {
   background: linear-gradient(135deg, var(--green), var(--cyan));
   box-shadow: 0 0 0 5px rgba(128, 214, 176, .09), 0 0 22px rgba(128, 214, 176, .34);
+}
+
+.mobile-section-nav {
+  display: none;
 }
 
 .driftinel-hero {
@@ -257,7 +262,7 @@
 .commercial-pillars span {
   display: block;
   margin-bottom: 30px;
-  color: #547067;
+  color: #46655c;
   font-size: 10px;
   font-weight: 750;
   letter-spacing: .14em;
@@ -273,7 +278,7 @@
 
 .commercial-pillars p {
   margin: 0;
-  color: #547067;
+  color: #46655c;
   font-size: 13px;
   line-height: 1.5;
 }
@@ -320,7 +325,7 @@
 .observation-steps span {
   display: inline-block;
   margin-bottom: 76px;
-  color: #4f756a;
+  color: #46655c;
   font-family: var(--serif);
   font-size: 14px;
 }
@@ -480,7 +485,7 @@
 .detector-grid span {
   display: block;
   margin-bottom: 64px;
-  color: #4f756a;
+  color: #46655c;
   font-family: var(--serif);
   font-size: 12px;
 }
@@ -552,7 +557,7 @@
 }
 
 .example-card span {
-  color: #4f756a;
+  color: #46655c;
   font-size: 10px;
   font-weight: 750;
   letter-spacing: .14em;
@@ -645,7 +650,7 @@
 }
 
 .difference-grid span {
-  color: #4f756a;
+  color: #46655c;
   font-size: 11px;
   font-weight: 750;
   letter-spacing: .1em;
@@ -755,9 +760,103 @@
 }
 
 @media (max-width: 980px) {
+  .product-header {
+    position: relative;
+    background: #071816;
+  }
+
+  .mobile-section-nav {
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, .06);
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    color: var(--white);
+    background: rgba(7, 24, 22, .96);
+    backdrop-filter: blur(18px);
+  }
+
+  .mobile-section-nav .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mobile-section-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 8px 10px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    color: #d8e6e1;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mobile-section-nav a:last-child {
+    border-right: 0;
+  }
+
+  .mobile-section-nav a:hover {
+    color: var(--green);
+    background: rgba(128, 214, 176, .07);
+  }
+
+  .product-page .section-label,
+  .product-kicker {
+    font-size: 13px;
+  }
+
+  .observation-map-head,
+  .observation-result span,
+  .commercial-pillars span,
+  .example-card span {
+    font-size: 12px;
+  }
+
+  .signal-source,
+  .observation-result p {
+    font-size: 14px;
+  }
+
+  .signal-item p,
+  .commercial-pillars p,
+  .proof-list strong,
+  .proof-list span,
+  .detector-grid p {
+    font-size: 15px;
+  }
+
+  .difference-grid span {
+    font-size: 13px;
+  }
+
+  .product-header .brand,
+  .product-header .nav-cta {
+    min-height: 40px;
+  }
+
+  .product-footer .footer-brand a,
+  .product-footer .footer-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+  }
+
+  .product-footer .footer-grid p,
+  .product-footer .footer-links a,
+  .trademark-notice {
+    font-size: 13px;
+  }
+
   .driftinel-hero-grid {
     grid-template-columns: 1fr 1fr;
     gap: 42px;
+    padding-top: 64px;
   }
 
   .signal-item {
@@ -834,16 +933,26 @@
 
   .driftinel-hero-grid {
     grid-template-columns: 1fr;
-    padding-top: 126px;
-    padding-bottom: 68px;
+    gap: 34px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
   .driftinel-hero h1 {
-    font-size: clamp(42px, 11.5vw, 62px);
+    font-size: clamp(38px, 10.5vw, 48px);
   }
 
   .observation-map {
-    margin-top: 18px;
+    margin-top: 8px;
+  }
+
+  .product-page .section {
+    padding: 64px 0;
+  }
+
+  .product-page .section-heading {
+    gap: 22px;
+    margin-bottom: 36px;
   }
 
   .commercial-pillars-grid,
@@ -860,7 +969,7 @@
   .commercial-pillars article:nth-child(2),
   .commercial-pillars article:nth-child(3) {
     min-height: auto;
-    padding: 26px 0;
+    padding: 22px 0;
     border-top: 1px solid var(--line);
     border-right: 0;
   }
@@ -870,7 +979,7 @@
   }
 
   .commercial-pillars span {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .observation-steps {
@@ -880,35 +989,44 @@
   .observation-steps article,
   .observation-steps article + article {
     min-height: auto;
-    padding: 30px 0;
+    padding: 24px 0;
     border-top: 1px solid var(--line);
     border-right: 0;
   }
 
   .observation-steps span {
-    margin-bottom: 38px;
+    margin-bottom: 24px;
   }
 
   .example-card,
   .example-card-wide {
     grid-column: span 1;
-    min-height: 210px;
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .example-card p {
+    margin-top: 36px;
   }
 
   .difference-grid article,
   .difference-grid article:nth-child(even) {
     grid-template-columns: 120px 1fr;
-    padding: 28px 0;
+    padding: 24px 0;
     border-right: 0;
   }
 
   .accountability-panel {
-    padding: 44px 24px;
+    padding: 36px 22px;
     border-radius: 22px;
   }
 
   .proof-panel {
-    padding: 8px 24px;
+    padding: 6px 20px;
+  }
+
+  .proof-list li {
+    padding: 18px 0;
   }
 
   .proof-list li,
@@ -925,13 +1043,19 @@
   }
 
   .detector-grid span {
-    margin-bottom: 38px;
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+
+  .detector-grid strong {
+    min-height: auto;
   }
 
   .detector-value {
     gap: 16px;
     padding: 28px 24px;
   }
+
 }
 
 @media (max-width: 480px) {
