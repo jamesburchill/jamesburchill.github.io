@@ -2494,6 +2494,43 @@
   color: var(--quiet-heading);
 }
 
+/* Theme-scoped contrast tokens for the dark ownership section. */
+.sovereignty-section {
+  --ownership-accent: #a8e5c9;
+  --ownership-copy: #dceae6;
+  --ownership-label: #c4e7dc;
+}
+
+.product-page .sovereignty-section .section-label {
+  color: var(--ownership-label);
+  font-size: 15px;
+}
+
+.product-page .sovereignty-section .commercial-emphasis {
+  border-top-color: rgba(220, 234, 230, .3);
+  color: var(--ownership-accent);
+}
+
+.product-page .sovereignty-section .sovereignty-copy > p,
+.product-page .sovereignty-section .sovereignty-points li {
+  color: var(--ownership-copy);
+}
+
+/* Theme-scoped contrast tokens for the dark closing call to action. */
+.product-cta-section {
+  --cta-copy: #dceae6;
+  --cta-label: #c4e7dc;
+}
+
+.product-page .product-cta-section .section-label {
+  color: var(--cta-label);
+  font-size: 15px;
+}
+
+.product-page .product-cta-section .product-cta-grid > div:last-child p {
+  color: var(--cta-copy);
+}
+
 @media (max-width: 760px) {
   .product-page {
     --mobile-body: 17px;
