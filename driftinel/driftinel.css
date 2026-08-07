@@ -1942,10 +1942,10 @@
 }
 
 .product-header {
-  border-bottom-color: rgba(20, 55, 47, .13);
+  border-bottom-color: rgba(20, 55, 47, .22);
   color: #14372f;
-  background: rgba(248, 250, 247, .94);
-  box-shadow: 0 8px 28px rgba(25, 58, 49, .05);
+  background: rgba(244, 248, 244, .96);
+  box-shadow: 0 8px 28px rgba(25, 58, 49, .09);
 }
 
 .product-header .brand,
@@ -1970,21 +1970,21 @@
 .driftinel-hero {
   color: #14372f;
   background:
-    radial-gradient(circle at 82% 24%, rgba(85, 174, 139, .16), transparent 29%),
-    radial-gradient(circle at 68% 76%, rgba(89, 150, 129, .08), transparent 34%),
-    linear-gradient(145deg, #f8faf7 0%, #edf4ee 58%, #e8f1eb 100%);
+    radial-gradient(circle at 82% 24%, rgba(55, 148, 111, .24), transparent 29%),
+    radial-gradient(circle at 68% 76%, rgba(47, 117, 95, .14), transparent 34%),
+    linear-gradient(145deg, #f5f8f4 0%, #e4eee6 58%, #d9e7dd 100%);
 }
 
 .driftinel-hero::before {
-  opacity: .38;
+  opacity: .55;
   background-image:
-    linear-gradient(rgba(20, 55, 47, .045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 55, 47, .045) 1px, transparent 1px);
+    linear-gradient(rgba(20, 55, 47, .075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 55, 47, .075) 1px, transparent 1px);
 }
 
 .driftinel-hero::after {
-  border-color: rgba(47, 123, 103, .14);
-  box-shadow: 0 0 0 100px rgba(47, 123, 103, .025), 0 0 0 200px rgba(47, 123, 103, .018);
+  border-color: rgba(47, 123, 103, .24);
+  box-shadow: 0 0 0 100px rgba(47, 123, 103, .045), 0 0 0 200px rgba(47, 123, 103, .032);
 }
 
 .product-kicker {
@@ -2045,8 +2045,25 @@
 }
 
 .desktop-preview {
-  border-color: rgba(20, 55, 47, .2);
-  box-shadow: 0 30px 80px rgba(25, 58, 49, .18);
+  border-color: rgba(20, 55, 47, .34);
+  box-shadow: 0 30px 80px rgba(25, 58, 49, .24);
+}
+
+.desktop-preview-bar {
+  border-bottom-color: rgba(255, 255, 255, .18);
+}
+
+.preview-observation {
+  border-color: rgba(128, 214, 176, .36);
+  background: linear-gradient(135deg, rgba(128, 214, 176, .14), rgba(125, 211, 252, .06));
+}
+
+.preview-observation ul {
+  border-top-color: rgba(255, 255, 255, .16);
+}
+
+.preview-observation li {
+  border-bottom-color: rgba(255, 255, 255, .16);
 }
 
 .commercial-pillars {
@@ -2142,15 +2159,15 @@
 
 @media (max-width: 980px) {
   .product-header {
-    background: #f8faf7;
+    background: #f3f7f3;
   }
 }
 
 @media (max-width: 760px) {
   .driftinel-hero {
     background:
-      radial-gradient(circle at 92% 18%, rgba(85, 174, 139, .13), transparent 32%),
-      linear-gradient(155deg, #fbfcfa 0%, #edf4ee 100%);
+      radial-gradient(circle at 92% 18%, rgba(55, 148, 111, .22), transparent 32%),
+      linear-gradient(155deg, #f7faf6 0%, #dfece3 100%);
   }
 
   .product-kicker,
