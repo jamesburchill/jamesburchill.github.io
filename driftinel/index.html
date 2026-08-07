@@ -256,8 +256,9 @@
       <div class="container founding-layout">
         <div class="founding-copy"><p class="section-label">Product early access</p><h2 id="founding-title">Join the Driftinel Founding Edition.</h2><p class="section-lede">We invite solopreneurs and small-business owners to help shape the first version of Driftinel.</p><p>Founding Edition participants explore Driftinel with real business workflows and help refine what makes an observation genuinely useful.</p><p class="founding-note">We share participation details directly with selected applicants.</p></div>
 
-        <form class="application-form" id="founding-application" action="mailto:contact@jamesburchill.com" method="post" enctype="text/plain">
+        <form class="application-form" id="founding-application" action="mailto:contact@jamesburchill.com" method="post" enctype="text/plain" novalidate>
           <div class="form-heading"><p class="section-label">Founding Edition application</p><h3>Tell us how you run your business.</h3><p>Submitting prepares an email in your default email app. Nothing is sent until you choose to send it.</p></div>
+          <p class="form-status" id="application-status" role="alert" aria-live="assertive" tabindex="-1"></p>
           <div class="form-grid">
             <div class="field"><label for="applicant-name">Name</label><input id="applicant-name" name="Name" type="text" autocomplete="name" required></div>
             <div class="field"><label for="applicant-email">Email</label><input id="applicant-email" name="Email" type="email" autocomplete="email" required></div>
@@ -270,7 +271,6 @@
           <fieldset><legend>Can you participate in occasional product feedback?</legend><label class="choice"><input type="radio" name="Product feedback" value="Yes" required><span>Yes</span></label><label class="choice"><input type="radio" name="Product feedback" value="Maybe"><span>Maybe</span></label><label class="choice"><input type="radio" name="Product feedback" value="No"><span>No</span></label></fieldset>
           <div class="field"><label for="additional-context">Additional context <span>(optional)</span></label><textarea id="additional-context" name="Additional context" rows="3"></textarea></div>
           <div class="form-submit"><button class="button button-primary" type="submit">Join the Founding Edition <span aria-hidden="true">↗</span></button><p>Your answers stay in your browser until you choose to send the prepared email.</p></div>
-          <p class="form-status" id="application-status" role="status" aria-live="polite"></p>
           <a class="form-email-fallback" id="application-email-fallback" href="mailto:contact@jamesburchill.com?subject=Driftinel%20Founding%20Edition%20application" hidden>Open the prepared application email again</a>
         </form>
       </div>
@@ -310,6 +310,17 @@
       const fallback = document.querySelector('#application-email-fallback');
       if (!form || !status || !fallback) return;
 
+      const requiredControls = Array.from(form.querySelectorAll('[required]'));
+      const requiredMessages = {
+        'Name': 'Enter your name.',
+        'Email': 'Enter your email address.',
+        'Type of business': 'Enter your type of business.',
+        'Team size': 'Choose how you work.',
+        'Main business tools': 'Enter the main business tools you use.',
+        'Most common worry': 'Enter the business detail you most worry about missing.',
+        'Product feedback': 'Choose whether you can participate in occasional product feedback.'
+      };
+
       const labels = {
         'Name': 'Name', 'Email': 'Email', 'Company name': 'Company name',
         'Type of business': 'Type of business', 'Team size': 'Work arrangement',
@@ -318,11 +329,114 @@
         'Product feedback': 'Product feedback', 'Additional context': 'Additional context'
       };
 
+      const controlsFor = (control) => control.type === 'radio'
+        ? Array.from(form.querySelectorAll('input[type="radio"]')).filter((item) => item.name === control.name)
+        : [control];
+
+      const representativeFor = (control) => controlsFor(control).find((item) => item.required) || control;
+      const errorIdFor = (control) => `${control.id || control.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-error`;
+      const containerFor = (control) => control.type === 'radio' ? control.closest('fieldset') : control.closest('.field');
+
+      const messageFor = (control) => {
+        if (control.type === 'email' && control.validity.typeMismatch) {
+          return 'Enter an email address in the format name@example.com.';
+        }
+        return requiredMessages[control.name] || 'Check this field.';
+      };
+
+      const clearError = (control) => {
+        const representative = representativeFor(control);
+        const errorId = errorIdFor(representative);
+        const container = containerFor(representative);
+
+        controlsFor(representative).forEach((item) => {
+          item.removeAttribute('aria-invalid');
+          const describedBy = (item.getAttribute('aria-describedby') || '')
+            .split(/\s+/)
+            .filter((id) => id && id !== errorId);
+          if (describedBy.length) item.setAttribute('aria-describedby', describedBy.join(' '));
+          else item.removeAttribute('aria-describedby');
+        });
+
+        if (container) {
+          delete container.dataset.invalid;
+          container.querySelector(`#${errorId}`)?.remove();
+        }
+      };
+
+      const showError = (control) => {
+        const representative = representativeFor(control);
+        const errorId = errorIdFor(representative);
+        const container = containerFor(representative);
+        if (!container) return;
+
+        let error = container.querySelector(`#${errorId}`);
+        if (!error) {
+          error = document.createElement('p');
+          error.className = 'field-error';
+          error.id = errorId;
+          container.append(error);
+        }
+        error.textContent = messageFor(representative);
+        container.dataset.invalid = 'true';
+
+        controlsFor(representative).forEach((item) => {
+          item.setAttribute('aria-invalid', 'true');
+          const describedBy = new Set((item.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean));
+          describedBy.add(errorId);
+          item.setAttribute('aria-describedby', Array.from(describedBy).join(' '));
+        });
+      };
+
+      const refreshErrorSummary = () => {
+        const count = form.querySelectorAll('.field-error').length;
+        if (count) {
+          status.textContent = `Please correct ${count} ${count === 1 ? 'field' : 'fields'} before preparing your application email.`;
+          status.dataset.state = 'error';
+        } else if (status.dataset.state === 'error') {
+          status.textContent = '';
+          delete status.dataset.state;
+        }
+      };
+
+      const handleControlChange = (control) => {
+        if (!control.matches('input, select, textarea')) return;
+        const representative = representativeFor(control);
+        if (representative.validity.valid) clearError(representative);
+        else if (representative.hasAttribute('aria-invalid')) showError(representative);
+        refreshErrorSummary();
+
+        if (status.dataset.state === 'ready') {
+          status.textContent = '';
+          delete status.dataset.state;
+          fallback.hidden = true;
+        }
+      };
+
+      form.addEventListener('input', (event) => handleControlChange(event.target));
+      form.addEventListener('change', (event) => handleControlChange(event.target));
+
       form.addEventListener('submit', (event) => {
         event.preventDefault();
-        if (!form.reportValidity()) {
-          status.textContent = 'Please complete the required fields before preparing your application email.';
-          status.dataset.state = 'error';
+        form.querySelectorAll('[aria-invalid="true"]').forEach((control) => clearError(control));
+
+        const invalidControls = [];
+        const checkedFields = new Set();
+        requiredControls.forEach((control) => {
+          const representative = representativeFor(control);
+          const key = representative.type === 'radio' ? representative.name : representative.id;
+          if (checkedFields.has(key)) return;
+          checkedFields.add(key);
+          if (!representative.validity.valid) {
+            showError(representative);
+            invalidControls.push(representative);
+          }
+        });
+
+        if (invalidControls.length) {
+          refreshErrorSummary();
+          fallback.hidden = true;
+          invalidControls[0].focus();
           return;
         }
 

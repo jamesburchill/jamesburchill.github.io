@@ -2194,3 +2194,281 @@
     white-space: normal;
   }
 }
+
+/* Durable accessibility floors for legibility and form feedback. */
+.product-page {
+  --muted: #304b43;
+}
+
+.product-header .site-nav a,
+.product-lede,
+.trust-line,
+.commercial-pillars p,
+.experience-steps p,
+.source-grid p,
+.future-packs,
+.founding-note {
+  color: #304b43;
+}
+
+.product-kicker,
+.product-name small {
+  color: #2f5046;
+}
+
+.product-page .section-label,
+.article-topic-grid span {
+  color: #2f554a;
+}
+
+.product-page .section-label,
+.product-kicker,
+.product-name small,
+.commercial-pillars span,
+.observation-example-head,
+.article-topic-grid span,
+.status-badge {
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.desktop-preview {
+  border-color: rgba(20, 55, 47, .48);
+}
+
+.desktop-preview-bar {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.preview-status,
+.preview-context,
+.preview-label,
+.preview-footer {
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.preview-context,
+.preview-footer,
+.preview-observation li span {
+  color: #a9beb8;
+}
+
+.preview-observation {
+  border-color: rgba(128, 214, 176, .5);
+}
+
+.preview-observation ul,
+.preview-observation li {
+  border-color: rgba(255, 255, 255, .24);
+}
+
+.preview-observation > p:not(.preview-label) {
+  color: #d2dfdb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.preview-observation li {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.trust-line,
+.experience-steps span,
+.observation-example h4,
+.possible-step strong,
+.status-legend {
+  font-size: 14px;
+}
+
+.observation-example-head,
+.observation-example h4 {
+  color: #36564d;
+}
+
+.observation-example-head small {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.possible-step strong {
+  color: #1f594a;
+}
+
+.status-legend {
+  color: #364f48;
+  font-weight: 700;
+}
+
+.commercial-pillars p,
+.experience-steps p,
+.observation-example ul,
+.observation-example p,
+.source-grid p,
+.future-packs,
+.founding-note,
+.claim-note,
+.form-heading p:last-child,
+.form-submit p {
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.claim-note {
+  font-size: 16px !important;
+}
+
+.sovereignty-points li {
+  color: #d2dfdb;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field label,
+.application-form legend,
+.field input,
+.field select,
+.field textarea,
+.choice {
+  font-size: 16px;
+}
+
+.field label span {
+  color: #40584f;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.field small {
+  color: #40584f;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-status {
+  margin: -8px 0 24px;
+  padding: 14px 16px;
+  border-left: 4px solid currentColor;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status[data-state="error"] {
+  color: #681f1a;
+  background: #fff0ee;
+}
+
+.form-status[data-state="ready"] {
+  color: #174f40;
+  background: #e7f4ec;
+}
+
+.field-error {
+  margin: 8px 0 0;
+  color: #681f1a;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.field input[aria-invalid="true"],
+.field select[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: #a63128;
+  box-shadow: 0 0 0 3px rgba(166, 49, 40, .16);
+}
+
+.application-form fieldset[data-invalid="true"] .choice {
+  border-color: #a63128;
+  background: #fff7f5;
+}
+
+.form-email-fallback {
+  color: #174f40;
+  font-size: 16px;
+}
+
+.application-form .button,
+.faq-grid details p {
+  font-size: 16px;
+}
+
+.faq-grid details p {
+  color: #304b43;
+  line-height: 1.55;
+}
+
+.product-footer .footer-grid p,
+.product-footer .footer-links a,
+.trademark-notice {
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .product-header .brand,
+  .product-header .brand span {
+    font-size: 14px;
+  }
+
+  .product-kicker,
+  .product-name small,
+  .trust-line {
+    color: #2f5046;
+  }
+
+  .product-lede {
+    color: #2f4b42;
+  }
+
+  .product-header .nav-cta,
+  .mobile-section-nav a,
+  .trust-line {
+    font-size: 14px;
+  }
+
+  .preview-status,
+  .preview-context,
+  .preview-label,
+  .preview-footer,
+  .observation-example-head,
+  .status-badge,
+  .article-topic-grid span {
+    font-size: 13px;
+  }
+
+  .preview-observation > p:not(.preview-label) {
+    font-size: 16px;
+  }
+
+  .preview-observation li {
+    font-size: 14px;
+  }
+
+  .application-form {
+    padding: 28px 22px;
+  }
+
+  .field label,
+  .application-form legend,
+  .field input,
+  .field select,
+  .field textarea,
+  .choice,
+  .form-status,
+  .form-email-fallback {
+    font-size: 16px;
+  }
+
+  .field small,
+  .field-error {
+    font-size: 14px;
+  }
+}
