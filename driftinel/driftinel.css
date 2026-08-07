@@ -18,7 +18,8 @@
 
 .driftinel-hero {
   position: relative;
-  min-height: 960px;
+  min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
   color: var(--white);
   background:
@@ -60,9 +61,10 @@
   grid-template-columns: minmax(0, 1.2fr) minmax(360px, .8fr);
   align-items: center;
   gap: 64px;
-  min-height: 960px;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-top: 96px;
+  padding-bottom: 56px;
 }
 
 .product-kicker {
