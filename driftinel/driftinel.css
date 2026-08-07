@@ -3,6 +3,10 @@
   background: #eef2ec;
 }
 
+.product-page .section {
+  padding: 84px 0;
+}
+
 .product-header {
   background: rgba(7, 24, 22, .86);
 }
@@ -949,7 +953,7 @@
   }
 
   .product-page .section {
-    padding: 64px 0;
+    padding: 48px 0;
   }
 
   .product-page .section-heading {
