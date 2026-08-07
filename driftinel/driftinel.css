@@ -2472,3 +2472,120 @@
     font-size: 14px;
   }
 }
+
+/* Theme-scoped contrast tokens for the dark awareness section. */
+.quiet-section {
+  --quiet-copy: #dceae6;
+  --quiet-heading: #a8e5c9;
+  --quiet-label: #c4e7dc;
+}
+
+.product-page .quiet-section .section-label {
+  color: var(--quiet-label);
+  font-size: 15px;
+}
+
+.product-page .quiet-section p,
+.product-page .quiet-section .freshness-panel ul {
+  color: var(--quiet-copy);
+}
+
+.product-page .quiet-section .freshness-panel h3 {
+  color: var(--quiet-heading);
+}
+
+@media (max-width: 760px) {
+  .product-page {
+    --mobile-body: 17px;
+    --mobile-meta: 15px;
+    --mobile-serif-small: 16px;
+  }
+
+  .product-page .section p,
+  .product-page .section li,
+  .product-page .section summary,
+  .product-page .button,
+  .commercial-pillars p,
+  .field label,
+  .application-form legend,
+  .field input,
+  .field select,
+  .field textarea,
+  .choice,
+  .form-status,
+  .form-email-fallback,
+  .field-error {
+    font-size: var(--mobile-body);
+  }
+
+  .product-header .brand,
+  .product-header .brand span,
+  .product-header .nav-cta,
+  .mobile-section-nav a,
+  .product-page .section .section-label,
+  .product-kicker,
+  .product-name small,
+  .trust-line,
+  .desktop-preview-bar,
+  .preview-status,
+  .preview-context,
+  .preview-label,
+  .preview-footer,
+  .commercial-pillars span,
+  .clue-grid span,
+  .difference-grid span,
+  .observation-example-head,
+  .observation-example h4,
+  .possible-step strong,
+  .status-legend,
+  .status-badge,
+  .article-topic-grid span,
+  .field label span,
+  .field small,
+  .product-footer .footer-grid p,
+  .product-footer .footer-links a,
+  .trademark-notice {
+    font-size: var(--mobile-meta);
+    font-weight: 750;
+  }
+
+  .preview-observation > p:not(.preview-label) {
+    font-size: var(--mobile-body);
+  }
+
+  .preview-observation li {
+    font-size: var(--mobile-meta);
+  }
+
+  .experience-steps span {
+    font-size: var(--mobile-serif-small);
+    font-weight: 700;
+  }
+
+  .claim-note {
+    font-size: var(--mobile-body) !important;
+  }
+
+  .hero-outcome {
+    font-size: clamp(30px, 8vw, 42px);
+  }
+
+  .product-page .section p.section-callout,
+  .product-page .section p.control-statement {
+    font-size: clamp(24px, 7vw, 34px);
+  }
+
+  .product-page .section p.commercial-emphasis {
+    font-size: 26px;
+  }
+
+  .product-page .section .detector-summary p,
+  .article-topic-grid h3 {
+    font-size: 24px;
+  }
+
+  .product-footer .footer-grid p.footer-signature {
+    font-size: 18px !important;
+    font-weight: 600;
+  }
+}
