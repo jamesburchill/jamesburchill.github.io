@@ -2555,6 +2555,22 @@
     font-size: var(--mobile-body);
   }
 
+  .observation-example-head {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-bottom: 24px;
+    line-height: 1.35;
+  }
+
+  .observation-example-head small {
+    display: block;
+    max-width: 100%;
+    letter-spacing: .06em;
+    white-space: normal;
+  }
+
   .product-header .brand,
   .product-header .brand span,
   .product-header .nav-cta,
