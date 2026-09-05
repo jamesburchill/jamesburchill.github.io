@@ -10,7 +10,7 @@ Its public centre of gravity is:
 - [Because Drift Happens](https://becausedrifthappens.com) — the doctrine behind the work; and
 - [The Vault](https://vault.jamesburchill.com) — field notes, working ideas, and evidence from the journey.
 
-The site also reflects James's current role as CTO at Tooljar, his leadership background, and the criteria for limited strategic engagements.
+The site also reflects James's current role as CTO at Tooljar, his background across engineering, publishing, teaching, and entrepreneurship, and selected private engagements in architecture, workflows, software products, and practical AI.
 
 The implementation is intentionally dependency-free: semantic HTML, a single stylesheet, and static image assets.
 
