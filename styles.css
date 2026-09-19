@@ -1166,3 +1166,8 @@ button:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Keep the full positioning statement readable across screen sizes. */
+.hero .brand-headline {
+  font-size: clamp(38px, 4vw, 60px);
+}

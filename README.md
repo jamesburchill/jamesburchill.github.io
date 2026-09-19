@@ -2,13 +2,13 @@
 
 Static source for [jamesburchill.com](https://jamesburchill.com), hosted with GitHub Pages.
 
-The site presents the work of James Burchill across technology leadership, intelligent systems, and selected strategic engagements.
+The site presents the work of James Burchill as a Business Systems Architect, CTO, and bestselling author, connecting discovery, design, development, and deployment.
 
 Its public centre of gravity is:
 
-- [Driftinel](https://driftinel.com) — operational awareness for fewer surprises;
+- [Driftinel](https://driftinel.com) — a drift detection system in development;
 - [Because Drift Happens](https://becausedrifthappens.com) — the doctrine behind the work; and
-- [The Vault](https://vault.jamesburchill.com) — field notes, working ideas, and evidence from the journey.
+- [The Vault](https://vault.jamesburchill.com) — a content library of practical knowledge, essays, field notes, and resources across business and technology.
 
 The site also reflects James's current role as CTO at Tooljar, his background across engineering, publishing, teaching, and entrepreneurship, and selected private engagements in architecture, workflows, software products, and practical AI.
 
