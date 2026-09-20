@@ -2659,3 +2659,44 @@
 .product-page .feature-set { background: #fff; border-color: #dce2e8; }
 .product-page .feature-set blockquote { border-left-color: #c58a24; background: #f7f8fa; }
 .product-page .section-callout { border-left-color: #c58a24; }
+
+/* A confident blue identity and a visible journey from records to a useful voice. */
+.product-page{--voice-blue:#174ad4;--voice-navy:#102454;--voice-amber:#ffca65;background:#fafbff;color:#162443}
+.product-page .voice-hero{min-height:auto;padding:100px 0 90px;background:radial-gradient(ellipse at 90% 10%,#316bf4 0%,transparent 55%),linear-gradient(130deg,#102d91,#164ddd 70%,#1956e5);color:white}
+.voice-hero .driftinel-hero-grid{align-items:center;gap:64px;min-height:auto;padding:0}
+.product-page .voice-hero h1{color:#fff;font-size:clamp(48px,5.6vw,78px);line-height:1.03;letter-spacing:-.045em;margin:22px 0}
+.product-page .voice-hero .product-name{color:#fff;font-size:25px;margin-bottom:24px}
+.product-page .voice-hero .product-kicker{color:#dbe6ff;font-size:12px;letter-spacing:.14em;line-height:1.7}
+.product-page .voice-hero .hero-outcome{color:#ffcf79;font-size:clamp(26px,2.8vw,38px);margin:22px 0}
+.product-page .voice-hero .product-lede{color:#edf3ff;font-size:19px;line-height:1.7;max-width:590px}
+.product-page .voice-hero .button-primary{background:#ffca65;border-color:#ffca65;color:#142451}
+.product-page .voice-hero .button-primary:hover{background:#ffdb94;border-color:#ffdb94}
+.product-page .voice-hero .button-secondary{background:transparent;color:white;border-color:#91b1ff}
+.product-page .voice-hero .button-secondary:hover{background:#1236a0}
+.product-page .voice-hero .trust-line,.product-page .voice-hero .claim-note{color:#dbe6ff}
+.product-page .voice-hero .claim-note{font-size:13px!important;line-height:1.6;margin-top:20px;max-width:450px}
+.voice-scene{position:relative;z-index:1;min-width:0}
+.scene-caption{font-family:Georgia,serif;font-style:italic;color:#fff;font-size:27px;margin:0 0 30px;text-align:center}
+.paper-trail{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:0 14px}
+.paper-card{background:#eef3ff;color:#102454;border-radius:5px;padding:24px 18px;box-shadow:0 12px 30px #06227340;transform:rotate(-5deg)}
+.paper-card:nth-child(2){transform:rotate(5deg);background:#fff6df}
+.paper-card span,.paper-card small{display:block;font-size:11px;line-height:1.6}.paper-card span{text-transform:uppercase;letter-spacing:.08em;font-weight:700}.paper-card strong{display:block;font-size:21px;line-height:1.4;margin:12px 0}
+.voice-thread{text-align:center;font-size:42px;line-height:1.5;color:#ffca65}
+.business-voice{position:relative;background:white;border-radius:24px 24px 24px 4px;padding:30px;box-shadow:0 22px 65px #08246666;color:#162443}
+.voice-label{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#174ad4}
+.voice-label i{display:block;width:9px;height:9px;background:#174ad4;border-radius:50%;box-shadow:0 0 0 4px #e3ecff}
+.business-voice h2{font-size:clamp(27px,3vw,37px);line-height:1.15;letter-spacing:-.025em;color:#102454;margin:22px 0 15px}
+.business-voice p{font-size:16px;line-height:1.6;color:#475578}
+.voice-receipts{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.voice-receipts span{font-size:11px;background:#edf2ff;padding:7px 10px;border-radius:6px;color:#2146a5}
+.business-voice .voice-decision{font-weight:700;color:#174ad4;margin-bottom:0}.scene-footnote{color:#dbe6ff;font-size:11px;line-height:1.6;margin:20px 14px 0}
+.product-page .section h2{color:#102454}.product-page .section-label,.product-page .feature-outcome{color:#174ad4}
+.product-page .clue-section{background:#fff}.memory-fragments{display:flex;gap:20px;justify-content:space-between;margin:35px 0}.memory-fragments p{background:#edf2ff;padding:24px;border-radius:12px;font-family:Georgia,serif;font-style:italic;color:#174ad4;font-size:23px!important;flex:1}
+.product-page .section-callout{background:transparent;border-left:4px solid #ffbd4a;color:#102454;font-size:36px}
+.product-page .feature-sets{background:#eef3ff}.product-page .feature-set{border-color:#dbe5ff}.product-page .feature-set h3{color:#102454;font-size:27px}.product-page .feature-set blockquote{background:#edf3ff;color:#174ad4;border-color:#ffbd4a;font-family:Georgia,serif;font-size:21px;font-weight:400}
+.product-page .product-intro{background:#fff}.product-page .audience-section{background:#fff5df}
+.product-page .sovereignty-section{background:#102454;color:#fff}.product-page .sovereignty-section h2{color:#fff}.product-page .sovereignty-section .section-label{color:#ffca65}.product-page .sovereignty-section p{color:#dce7ff}
+.voice-trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px}.voice-trust-grid article{border-top:1px solid #637baa;padding-top:25px;scroll-margin-top:100px}.voice-trust-grid span{color:#ffca65;font-size:14px}.voice-trust-grid h3{font-size:23px;color:#fff;margin:18px 0}.voice-trust-grid p{font-size:17px;line-height:1.7}.ownership-footer{padding-top:35px;margin-top:35px;border-top:1px solid #637baa}
+.product-page .button-primary{background:#174ad4;border-color:#174ad4;color:white}.product-page .button-primary:hover{background:#103bb0;border-color:#103bb0}
+.product-page .product-cta-section{background:#174ad4}.product-page .product-cta-section h2{color:#fff}.product-page .product-cta-section .section-label{color:#ffca65}.product-page .product-cta-section .button-dark{background:#ffca65;color:#102454}.product-page .product-cta-section .button-secondary{color:#fff;border-color:#b2c9ff;background:transparent}
+@media(max-width:1000px){.voice-hero .driftinel-hero-grid{grid-template-columns:1fr;gap:50px}.voice-scene{max-width:580px;width:100%;margin:auto}.voice-hero .driftinel-hero-copy{max-width:720px}.voice-trust-grid{gap:24px}}
+@media(max-width:760px){.product-page .voice-hero{padding:65px 0}.product-page .voice-hero h1{font-size:52px}.product-page .voice-hero .product-lede{font-size:18px}.paper-trail{gap:12px;padding:0 8px}.paper-card{padding:18px 12px}.paper-card strong{font-size:18px}.business-voice{padding:25px}.business-voice h2{font-size:31px}.memory-fragments{flex-direction:column;gap:12px}.memory-fragments p{margin:0}.voice-trust-grid{grid-template-columns:1fr}.product-page .section-callout{font-size:30px}}
