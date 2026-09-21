@@ -12,6 +12,8 @@ Work and writing links have equal emphasis:
 
 The homepage does not advertise consulting services or an engagement process.
 
+The Driftinel page explains the project and its private development status. It does not publish pricing or accept early-access applications.
+
 The implementation is intentionally dependency-free: semantic HTML, a single stylesheet, and static image assets.
 
 ## Local preview
