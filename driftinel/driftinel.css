@@ -2700,3 +2700,19 @@
 .product-page .product-cta-section{background:#174ad4}.product-page .product-cta-section h2{color:#fff}.product-page .product-cta-section .section-label{color:#ffca65}.product-page .product-cta-section .button-dark{background:#ffca65;color:#102454}.product-page .product-cta-section .button-secondary{color:#fff;border-color:#b2c9ff;background:transparent}
 @media(max-width:1000px){.voice-hero .driftinel-hero-grid{grid-template-columns:1fr;gap:50px}.voice-scene{max-width:580px;width:100%;margin:auto}.voice-hero .driftinel-hero-copy{max-width:720px}.voice-trust-grid{gap:24px}}
 @media(max-width:760px){.product-page .voice-hero{padding:65px 0}.product-page .voice-hero h1{font-size:52px}.product-page .voice-hero .product-lede{font-size:18px}.paper-trail{gap:12px;padding:0 8px}.paper-card{padding:18px 12px}.paper-card strong{font-size:18px}.business-voice{padding:25px}.business-voice h2{font-size:31px}.memory-fragments{flex-direction:column;gap:12px}.memory-fragments p{margin:0}.voice-trust-grid{grid-template-columns:1fr}.product-page .section-callout{font-size:30px}}
+
+/* Keep these section headlines on two lines on desktop, with natural mobile wrapping. */
+@media (min-width: 761px) {
+  #problem-title,
+  #features-title {
+    font-size: clamp(32px, 4vw, 54px);
+  }
+}
+
+@media (max-width: 760px) {
+  #problem-title br,
+  #features-title br,
+  #origins-title br {
+    display: none;
+  }
+}
