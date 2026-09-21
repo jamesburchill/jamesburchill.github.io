@@ -2704,7 +2704,8 @@
 /* Keep these section headlines on two lines on desktop, with natural mobile wrapping. */
 @media (min-width: 761px) {
   #problem-title,
-  #features-title {
+  #features-title,
+  #ownership-title {
     font-size: clamp(32px, 4vw, 54px);
   }
 }
@@ -2712,7 +2713,8 @@
 @media (max-width: 760px) {
   #problem-title br,
   #features-title br,
-  #origins-title br {
+  #origins-title br,
+  #ownership-title br {
     display: none;
   }
 }
