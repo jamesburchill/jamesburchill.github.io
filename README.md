@@ -2,17 +2,17 @@
 
 Static source for [jamesburchill.com](https://jamesburchill.com), hosted with GitHub Pages.
 
-The site is a short professional introduction to James Burchill as a Business Systems Architect, CTO, and bestselling author. It includes a brief biography, his current CTO role at Tooljar, and a simple contact link.
+The site is a short professional introduction to James Burchill as founder of Driftinel, Systems Architect, CTO, and bestselling author. It includes a brief biography, his roles as CTO at Tooljar and Principal & Systems Architect at JMG, and a simple contact link.
 
 Work and writing links have equal emphasis:
 
 - [The Vault](https://vault.jamesburchill.com) — essays, notes, and practical resources;
-- [Driftinel](https://driftinel.com) — an independent software project in development; and
+- [Driftinel](https://driftinel.com) — a managed service in development for business memory, search, and ongoing monitoring; and
 - [Because Drift Happens](https://becausedrifthappens.com) — thinking on how systems change and stay aligned with their purpose.
 
 The homepage does not advertise consulting services or an engagement process.
 
-The Driftinel page explains the project and its private development status. It does not publish pricing or accept early-access applications.
+The Driftinel page presents the intended secure, turnkey managed service: a server provisioned for each client, selected channels connected, ongoing monitoring independent of the owner’s laptop, and notifications when drift is detected. The service remains in private development; hosting location, data handling, inference, and support arrangements are not fixed public commitments. The page does not publish pricing or accept early-access applications.
 
 The implementation is intentionally dependency-free: semantic HTML, a single stylesheet, and static image assets.
 
