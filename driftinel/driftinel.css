@@ -2664,7 +2664,7 @@
 .product-page{--voice-blue:#174ad4;--voice-navy:#102454;--voice-amber:#ffca65;background:#fafbff;color:#162443}
 .product-page .voice-hero{min-height:auto;padding:100px 0 90px;background:radial-gradient(ellipse at 90% 10%,#316bf4 0%,transparent 55%),linear-gradient(130deg,#102d91,#164ddd 70%,#1956e5);color:white}
 .voice-hero .driftinel-hero-grid{align-items:center;gap:64px;min-height:auto;padding:0}
-.product-page .voice-hero h1{color:#fff;font-size:clamp(48px,5.6vw,78px);line-height:1.03;letter-spacing:-.045em;margin:22px 0}
+.product-page .voice-hero h1{color:#fff;font-size:clamp(48px,5vw,70px);line-height:1.03;letter-spacing:-.045em;margin:22px 0}
 .product-page .voice-hero .product-name{color:#fff;font-size:25px;margin-bottom:24px}
 .product-page .voice-hero .product-kicker{color:#dbe6ff;font-size:12px;letter-spacing:.14em;line-height:1.7}
 .product-page .voice-hero .hero-outcome{color:#ffcf79;font-size:clamp(26px,2.8vw,38px);margin:22px 0}
