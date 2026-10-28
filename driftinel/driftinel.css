@@ -2664,7 +2664,9 @@
 .product-page{--voice-blue:#174ad4;--voice-navy:#102454;--voice-amber:#ffca65;background:#fafbff;color:#162443}
 .product-page .voice-hero{min-height:auto;padding:100px 0 90px;background:radial-gradient(ellipse at 90% 10%,#316bf4 0%,transparent 55%),linear-gradient(130deg,#102d91,#164ddd 70%,#1956e5);color:white}
 .voice-hero .driftinel-hero-grid{align-items:center;gap:64px;min-height:auto;padding:0}
-.product-page .voice-hero h1{color:#fff;font-size:clamp(48px,5vw,70px);line-height:1.03;letter-spacing:-.045em;margin:22px 0}
+.voice-hero .driftinel-hero-copy{container-type:inline-size}
+.product-page .voice-hero h1{color:#fff;font-size:clamp(36px,4.2vw,60px);font-size:clamp(36px,8.5cqi,64px);text-wrap:balance;line-height:1.03;letter-spacing:-.045em;margin:22px 0}
+.voice-hero .headline-phrase{display:inline-block;white-space:nowrap}
 .product-page .voice-hero .product-name{color:#fff;font-size:25px;margin-bottom:24px}
 .product-page .voice-hero .product-kicker{color:#dbe6ff;font-size:12px;letter-spacing:.14em;line-height:1.7}
 .product-page .voice-hero .hero-outcome{color:#ffcf79;font-size:clamp(26px,2.8vw,38px);margin:22px 0}
@@ -2699,7 +2701,7 @@
 .product-page .button-primary{background:#174ad4;border-color:#174ad4;color:white}.product-page .button-primary:hover{background:#103bb0;border-color:#103bb0}
 .product-page .product-cta-section{background:#174ad4}.product-page .product-cta-section h2{color:#fff}.product-page .product-cta-section .section-label{color:#ffca65}.product-page .product-cta-section .button-dark{background:#ffca65;color:#102454}.product-page .product-cta-section .button-secondary{color:#fff;border-color:#b2c9ff;background:transparent}
 @media(max-width:1000px){.voice-hero .driftinel-hero-grid{grid-template-columns:1fr;gap:50px}.voice-scene{max-width:580px;width:100%;margin:auto}.voice-hero .driftinel-hero-copy{max-width:720px}.voice-trust-grid{gap:24px}}
-@media(max-width:760px){.product-page .voice-hero{padding:65px 0}.product-page .voice-hero h1{font-size:52px}.product-page .voice-hero .product-lede{font-size:18px}.paper-trail{gap:12px;padding:0 8px}.paper-card{padding:18px 12px}.paper-card strong{font-size:18px}.business-voice{padding:25px}.business-voice h2{font-size:31px}.memory-fragments{flex-direction:column;gap:12px}.memory-fragments p{margin:0}.voice-trust-grid{grid-template-columns:1fr}.product-page .section-callout{font-size:30px}}
+@media(max-width:760px){.product-page .voice-hero{padding:65px 0}.product-page .voice-hero h1{font-size:clamp(28px,9.5vw,44px)}.product-page .voice-hero .product-lede{font-size:18px}.paper-trail{gap:12px;padding:0 8px}.paper-card{padding:18px 12px}.paper-card strong{font-size:18px}.business-voice{padding:25px}.business-voice h2{font-size:31px}.memory-fragments{flex-direction:column;gap:12px}.memory-fragments p{margin:0}.voice-trust-grid{grid-template-columns:1fr}.product-page .section-callout{font-size:30px}}
 
 /* Keep these section headlines on two lines on desktop, with natural mobile wrapping. */
 @media (min-width: 761px) {
@@ -2716,5 +2718,26 @@
   #origins-title br,
   #ownership-title br {
     display: none;
+  }
+}
+
+/* Fit the audience heading to its column and let its text wrap naturally. */
+.audience-section .section-heading {
+  align-items: start;
+}
+
+.audience-section .section-heading > div:first-child {
+  container-type: inline-size;
+}
+
+#audience-title {
+  font-size: clamp(36px, 4.2vw, 54px);
+  font-size: clamp(36px, 8cqi, 54px);
+  text-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  #audience-title {
+    font-size: clamp(28px, 8vw, 36px);
   }
 }
