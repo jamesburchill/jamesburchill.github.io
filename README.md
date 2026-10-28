@@ -7,12 +7,12 @@ The site is a short professional introduction to James Burchill as founder of Dr
 Work and writing links have equal emphasis:
 
 - [The Vault](https://vault.jamesburchill.com) — essays, notes, and practical resources;
-- [Driftinel](https://driftinel.com) — a managed service in development for business memory, search, and ongoing monitoring; and
+- [Driftinel](https://driftinel.com) — a turnkey managed service in development that helps business owners keep promises and avoid costly mistakes through drift notifications; and
 - [Because Drift Happens](https://becausedrifthappens.com) — thinking on how systems change and stay aligned with their purpose.
 
 The homepage does not advertise consulting services or an engagement process.
 
-The Driftinel page leads with helping business owners keep their promises and act before missed deadlines or overlooked details become costly mistakes. It presents the intended secure, turnkey managed service: a server provisioned for each client, their chosen channels connected, ongoing monitoring independent of the owner’s laptop, and drift notifications with supporting evidence. The service remains in private development; hosting location, data handling, inference, and support arrangements are not fixed public commitments. The page does not publish pricing or accept early-access applications.
+The Driftinel page leads with helping business owners keep their promises and act before missed deadlines or overlooked details become costly mistakes. It presents the intended secure, turnkey managed service: a server provisioned for each client, their chosen channels connected, ongoing monitoring independent of the owner’s laptop, and drift notifications with supporting evidence. The service remains in development; hosting location, data handling, inference, and support arrangements are not fixed public commitments. The page does not publish pricing or accept early-access applications.
 
 The implementation is intentionally dependency-free: semantic HTML, a single stylesheet, and static image assets.
 
