@@ -10,7 +10,7 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 - `styles.css`, icons, manifest, and `img/`: shared site presentation and assets.
 - `games/spaceshooter/`: browser game with its own README.
 - `parkedproject/`: existing project page and assets.
-- `driftinel/`: redirect to the standalone product site and retained legacy stylesheet.
+- `driftinel/`: redirect to the standalone product site.
 
 The homepage gives The Vault, Driftinel, and Because Drift Happens equal emphasis.
 It does not advertise consulting services or an engagement process.
@@ -30,8 +30,9 @@ The routing cutover points `driftinel.com` directly at the standalone Pages site
 The main domain passes HTTPS verification and enforces HTTPS. This repository's
 `/driftinel/` page redirects there, with a visible fallback link; browser redirects
 preserve query strings and fragment identifiers. The destination retains the
-existing feature-card IDs. The old product stylesheet remains for
-compatibility; no game or other personal-site content moves to the product repo.
+existing feature-card IDs. Product styles live in the standalone website
+repository; the redirect needs no stylesheet. No game or other personal-site
+content moves to the product repo.
 
 ## Local preview
 
