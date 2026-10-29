@@ -2741,3 +2741,48 @@
     font-size: clamp(28px, 8vw, 36px);
   }
 }
+
+/* Match section shortcuts to the visible navigation at every breakpoint. */
+.product-page {
+  --anchor-offset: 88px;
+}
+
+.product-page :is(#main-content, #problem, #features, #memory, #search,
+  #drift-detection, #how-it-works, #who-it-is-for, #managed-service,
+  #what-it-watches, #development, #faq) {
+  scroll-margin-top: var(--anchor-offset);
+}
+
+@media (max-width: 1120px) {
+  .product-page {
+    --anchor-offset: 64px;
+  }
+
+  .product-header {
+    position: relative;
+  }
+
+  .mobile-section-nav {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+  }
+
+  .mobile-section-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 8px 10px;
+    border-right: 1px solid rgba(25, 37, 50, .12);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mobile-section-nav a:last-child {
+    border-right: 0;
+  }
+}

@@ -1,34 +1,54 @@
 # jamesburchill.com
 
-Static source for [jamesburchill.com](https://jamesburchill.com), hosted with GitHub Pages.
+Personal website for James Burchill: founder of Driftinel, Systems Architect,
+CTO, and bestselling author. GitHub Pages publishes this repository at
+[https://jamesburchill.com/](https://jamesburchill.com/).
 
-The site is a short professional introduction to James Burchill as founder of Driftinel, Systems Architect, CTO, and bestselling author. It includes a brief biography, his roles as CTO at Tooljar and Principal & Systems Architect at JMG, and a simple contact link.
+## Contents
 
-Work and writing links have equal emphasis:
+- `index.html`: professional introduction, biography, work/writing links, and contact.
+- `styles.css`, icons, manifest, and `img/`: shared site presentation and assets.
+- `games/spaceshooter/`: browser game with its own README.
+- `parkedproject/`: existing project page and assets.
+- `driftinel/`: former product page and stylesheet, retained during domain cutover.
 
-- [The Vault](https://vault.jamesburchill.com) — essays, notes, and practical resources;
-- [Driftinel](https://driftinel.com) — a turnkey managed service in development that helps business owners keep promises and avoid costly mistakes through drift notifications; and
-- [Because Drift Happens](https://becausedrifthappens.com) — thinking on how systems change and stay aligned with their purpose.
+The homepage gives The Vault, Driftinel, and Because Drift Happens equal emphasis.
+It does not advertise consulting services or an engagement process.
 
-The homepage does not advertise consulting services or an engagement process.
+## Driftinel website separation
 
-The Driftinel page leads with helping business owners keep their promises and act before missed deadlines or overlooked details become costly mistakes. It presents the intended secure, turnkey managed service: a server provisioned for each client, their chosen channels connected, ongoing monitoring independent of the owner’s laptop, and drift notifications with supporting evidence. The copy pairs “Driftinel checks 100 times a day. So you don’t have to.” with peace of mind when owners step away. The page uses active voice and present tense throughout, including the FAQ’s 14-minute checking cycle. This copy describes the service offering; it does not verify runtime behaviour. The service remains in development; hosting location, data handling, inference, and support arrangements are not fixed public commitments. The page does not publish pricing or accept early-access applications.
+The standalone marketing source now lives in
+[`jamesburchill/driftinel-website`](https://github.com/jamesburchill/driftinel-website),
+with its own GitHub Pages deployment and `driftinel.com` custom-domain setting.
+The private application source remains in `jamesburchill/driftinel`.
+Maintain product copy and navigation in the standalone website repository after
+cutover. Its deployment guide records DNS, verification, and recovery.
 
-The implementation is intentionally dependency-free: semantic HTML, a single stylesheet, and static image assets.
+During cutover, `driftinel.com` still forwards to this repository's `/driftinel/`
+page. Keep that page serving until the standalone domain works over HTTPS, then
+replace it with a redirect and visible fallback link. Preserve its existing
+fragment identifiers in the destination. The old product stylesheet remains for
+compatibility; no game or other personal-site content moves to the product repo.
 
 ## Local preview
 
 From the repository root:
 
 ```sh
-python3 -m http.server 8000
+python3 -m http.server 8767 --bind 127.0.0.1
 ```
 
-Then open [http://localhost:8000](http://localhost:8000).
+Open [the personal site](http://127.0.0.1:8767/) or
+[the former product page](http://127.0.0.1:8767/driftinel/).
+The site uses static HTML, CSS, and JavaScript without dependency installation.
 
-## Deployment
+## Publishing
 
-- GitHub Pages publishes from the `main` branch.
-- `CNAME` sets the custom domain to `jamesburchill.com`.
-- The Driftinel product page is served from `/driftinel/`, with [driftinel.com](https://driftinel.com) as its public address.
-- The production domain is served by GitHub Pages.
+GitHub Pages publishes `main` from the repository root. `.nojekyll` serves the
+files directly. `CNAME` contains `jamesburchill.com`; the Driftinel custom domain
+belongs to its separate repository and does not replace this value.
+
+Before pushing, review the diff, check changed links/assets, and inspect affected
+pages at desktop/mobile widths. After pushing, confirm the Pages build succeeds
+for the expected commit and verify the public result. Preserve other site sections
+and their independent documentation.
