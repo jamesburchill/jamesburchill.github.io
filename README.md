@@ -24,9 +24,10 @@ The private application source remains in `jamesburchill/driftinel`.
 Maintain product copy and navigation in the standalone website repository after
 cutover. Its deployment guide records DNS, verification, and recovery.
 
-During cutover, `driftinel.com` still forwards to this repository's `/driftinel/`
-page. Keep that page serving until the standalone domain works over HTTPS, then
-replace it with a redirect and visible fallback link. Preserve its existing
+The routing cutover points `driftinel.com` directly at the standalone Pages site.
+While GitHub provisions HTTPS, this repository's `/driftinel/` page remains a
+working fallback. Replace it with a redirect and visible link only after the
+standalone domain passes HTTPS verification. Preserve its existing
 fragment identifiers in the destination. The old product stylesheet remains for
 compatibility; no game or other personal-site content moves to the product repo.
 
