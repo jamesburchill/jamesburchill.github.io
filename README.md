@@ -10,7 +10,7 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 - `styles.css`, icons, manifest, and `img/`: shared site presentation and assets.
 - `games/spaceshooter/`: browser game with its own README.
 - `parkedproject/`: existing project page and assets.
-- `driftinel/`: former product page and stylesheet, retained during domain cutover.
+- `driftinel/`: redirect to the standalone product site and retained legacy stylesheet.
 
 The homepage gives The Vault, Driftinel, and Because Drift Happens equal emphasis.
 It does not advertise consulting services or an engagement process.
@@ -20,15 +20,17 @@ It does not advertise consulting services or an engagement process.
 The standalone marketing source now lives in
 [`jamesburchill/driftinel-website`](https://github.com/jamesburchill/driftinel-website),
 with its own GitHub Pages deployment and `driftinel.com` custom-domain setting.
-The private application source remains in `jamesburchill/driftinel`.
+Both website and application source repositories are private; GitHub Pages serves
+the marketing website publicly. The application source remains in
+`jamesburchill/driftinel`.
 Maintain product copy and navigation in the standalone website repository after
 cutover. Its deployment guide records DNS, verification, and recovery.
 
 The routing cutover points `driftinel.com` directly at the standalone Pages site.
-While GitHub provisions HTTPS, this repository's `/driftinel/` page remains a
-working fallback. Replace it with a redirect and visible link only after the
-standalone domain passes HTTPS verification. Preserve its existing
-fragment identifiers in the destination. The old product stylesheet remains for
+The main domain passes HTTPS verification and enforces HTTPS. This repository's
+`/driftinel/` page redirects there, with a visible fallback link; browser redirects
+preserve query strings and fragment identifiers. The destination retains the
+existing feature-card IDs. The old product stylesheet remains for
 compatibility; no game or other personal-site content moves to the product repo.
 
 ## Local preview
