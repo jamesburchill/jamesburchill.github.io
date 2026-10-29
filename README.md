@@ -12,7 +12,7 @@ Work and writing links have equal emphasis:
 
 The homepage does not advertise consulting services or an engagement process.
 
-The Driftinel page leads with helping business owners keep their promises and act before missed deadlines or overlooked details become costly mistakes. It presents the intended secure, turnkey managed service: a server provisioned for each client, their chosen channels connected, ongoing monitoring independent of the owner’s laptop, and drift notifications with supporting evidence. The service remains in development; hosting location, data handling, inference, and support arrangements are not fixed public commitments. The page does not publish pricing or accept early-access applications.
+The Driftinel page leads with helping business owners keep their promises and act before missed deadlines or overlooked details become costly mistakes. It presents the intended secure, turnkey managed service: a server provisioned for each client, their chosen channels connected, ongoing monitoring independent of the owner’s laptop, and drift notifications with supporting evidence. The copy pairs “Driftinel checks 100 times a day. So you don’t have to.” with peace of mind when owners step away. The page uses active voice and present tense throughout, including the FAQ’s 14-minute checking cycle. This copy describes the service offering; it does not verify runtime behaviour. The service remains in development; hosting location, data handling, inference, and support arrangements are not fixed public commitments. The page does not publish pricing or accept early-access applications.
 
 The implementation is intentionally dependency-free: semantic HTML, a single stylesheet, and static image assets.
 

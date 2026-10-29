@@ -2669,7 +2669,7 @@
 .voice-hero .headline-phrase{display:inline-block;white-space:nowrap}
 .product-page .voice-hero .product-name{color:#fff;font-size:25px;margin-bottom:24px}
 .product-page .voice-hero .product-kicker{color:#dbe6ff;font-size:12px;letter-spacing:.14em;line-height:1.7}
-.product-page .voice-hero .hero-outcome{color:#ffcf79;font-size:clamp(26px,2.8vw,38px);margin:22px 0}
+.product-page .voice-hero .hero-outcome{color:#ffcf79;font-size:clamp(26px,2.8vw,38px);text-wrap:wrap;margin:22px 0}
 .product-page .voice-hero .product-lede{color:#edf3ff;font-size:19px;line-height:1.7;max-width:590px}
 .product-page .voice-hero .button-primary{background:#ffca65;border-color:#ffca65;color:#142451}
 .product-page .voice-hero .button-primary:hover{background:#ffdb94;border-color:#ffdb94}
