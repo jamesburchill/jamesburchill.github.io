@@ -7,13 +7,15 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 ## Contents
 
 - `index.html`: professional introduction, biography, work/writing links, and contact.
-- `styles.css`, icons, manifest, and `img/`: shared site presentation and assets.
+- `styles.css`, `warm-theme.css`, icons, manifest, and `img/`: shared site presentation and assets.
 - `games/spaceshooter/`: browser game with its own README.
 - `parkedproject/`: existing project page and assets.
 - `driftinel/`: redirect to the standalone product site.
 - `blind-squirrel-method/`: ungated book page, titled cover and the PDF compiled from Scrivener.
 
-The homepage gives The Vault, Driftinel, and Because Drift Happens equal emphasis.
+The homepage features the free book and its cover, followed by The Vault,
+Driftinel, and Because Drift Happens with equal emphasis. Its cream, forest green
+and muted gold palette is shared with the book page.
 It does not advertise consulting services or an engagement process.
 
 ## Driftinel website separation
