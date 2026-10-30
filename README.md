@@ -11,6 +11,7 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 - `games/spaceshooter/`: browser game with its own README.
 - `parkedproject/`: existing project page and assets.
 - `driftinel/`: redirect to the standalone product site.
+- `blind-squirrel-method/`: ungated book page, titled cover and the PDF compiled from Scrivener.
 
 The homepage gives The Vault, Driftinel, and Because Drift Happens equal emphasis.
 It does not advertise consulting services or an engagement process.
@@ -47,6 +48,15 @@ Open [the personal site](http://127.0.0.1:8767/) or
 The site uses static HTML, CSS, and JavaScript without dependency installation.
 
 ## Publishing
+
+The book page is at `https://jamesburchill.com/blind-squirrel-method/`. The separate
+`blindsquirrelmethod.com` domain forwards to this page; it does not replace the
+site's GitHub Pages custom domain. Use permanent forwarding without masking.
+The PDF download requires no registration. Update it by compiling the Desktop
+`The Blind Squirrel Method.scriv` project using PDF and the project format
+`The Blind Squirrel Method — Shareable PDF`, then replacing
+`blind-squirrel-method/the-blind-squirrel-method.pdf`. Check the exported links,
+page count and layout before publishing; update the page's file details if needed.
 
 GitHub Pages publishes `main` from the repository root. `.nojekyll` serves the
 files directly. `CNAME` contains `jamesburchill.com`; the Driftinel custom domain

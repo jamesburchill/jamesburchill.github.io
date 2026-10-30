@@ -1,0 +1,33 @@
+.book-hero { display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(40px,7vw,100px); align-items:center; padding-top:150px; padding-bottom:92px; }
+.book-eyebrow { margin:0 0 18px; color:#705239; font-size:12px; font-weight:750; letter-spacing:.13em; text-transform:uppercase; }
+.book-copy h1 { margin:0; font-family:var(--serif); font-size:clamp(44px,5.3vw,70px); line-height:1.06; letter-spacing:-.045em; }
+.book-subtitle { margin:24px 0 0; font-family:var(--serif); font-style:italic; font-size:clamp(20px,2vw,25px); line-height:1.45; color:#5a5147; }
+.book-byline { margin:16px 0 30px; font-size:14px; }
+.book-hook { font-size:22px; font-weight:700; line-height:1.4; margin-bottom:16px; }
+.book-lede { max-width:510px; font-size:17px; }
+.book-cover { display:block; max-width:380px; justify-self:end; box-shadow:0 22px 54px #2d20152b, -4px 0 0 #cfc1aa; border-radius:2px 5px 5px 2px; overflow:hidden; transform:rotate(1deg); }
+.book-cover img { width:100%; height:auto; }
+.book-download { color:#fffaf0; background:#345342; font-size:15px; padding:15px 24px; }
+.book-download:hover { background:#233b2e; }
+.book-download-note { margin-top:14px; color:#655e54; font-size:13px; line-height:1.8; }
+.book-reading-width { max-width:760px; }
+.book-story { background:#e9e2d5; padding:82px 0; scroll-margin-top:72px; }
+.book-story h2,.book-author h2,.book-share h2 { font-family:var(--serif); letter-spacing:-.035em; line-height:1.15; font-size:clamp(31px,3.5vw,44px); margin:0 0 26px; }
+.book-story p,.book-author p,.book-share p { font-size:17px; }
+.book-story .book-eyebrow,.book-author .book-eyebrow,.book-share .book-eyebrow { font-size:12px; }
+.book-story blockquote { border-left:3px solid #a17f4e; padding-left:24px; margin:38px 0 12px; font-family:var(--serif); font-size:27px; font-style:italic; line-height:1.5; }
+.book-story .book-quote-credit { margin:0 0 0 27px; font-size:13px; color:#655e54; }
+.book-author { padding-top:86px; padding-bottom:86px; display:grid; grid-template-columns:200px 1fr; gap:50px; max-width:900px; align-items:start; scroll-margin-top:105px; }
+.book-author img { border-radius:50%; width:200px; height:200px; object-fit:cover; }
+.book-share { padding:74px 0 82px; border-top:1px solid var(--line); }
+.book-share .button-row { margin-top:26px; }
+.book-share .book-address { font-size:14px; margin-top:26px; }
+@media(max-width:760px) {
+  .book-hero { grid-template-columns:1fr; padding-top:120px; padding-bottom:55px; gap:42px; }
+  .book-cover { grid-row:2; width:min(78%,320px); justify-self:center; }
+  .book-copy h1 { font-size:clamp(42px,9vw,62px); }
+  .book-story,.book-share { padding:56px 0; }
+  .book-author { grid-template-columns:1fr; gap:26px; padding-top:56px; padding-bottom:56px; }
+  .book-author img { width:130px; height:130px; }
+  .wide-only { display:none; }
+}
