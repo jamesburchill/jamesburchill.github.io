@@ -17,6 +17,10 @@ The homepage features the free book and its cover, followed by The Vault,
 Driftinel, and Because Drift Happens with equal emphasis. Its cream, forest green
 and muted gold palette is shared with the book page.
 It does not advertise consulting services or an engagement process.
+The homepage links the existing Driftinel and Tooljar role statements, describes
+the focus of each work/writing destination, and invites questions about writing
+and current projects. The Blind Squirrel Method is the only featured book; do not
+add earlier book titles or a catalogue without a new editorial decision.
 
 ## Driftinel website separation
 
