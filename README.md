@@ -102,5 +102,7 @@ robots directive on the live site. Then, with Search Console authorization:
 3. Retain `https://vault.jamesburchill.com/sitemap.xml` and
    `https://vault.jamesburchill.com/feeds/rss.xml`.
 
-These Search Console steps are pending; preparing the local files does not
-submit a sitemap, request indexing, or remove existing submissions.
+On 31 October 2026, the SEO files were published and verified live. Search
+Console accepted the new sitemap with two discovered pages. The six obsolete
+submissions above were removed; both Vault feeds were retained. The book page
+is discovered through the sitemap but is not yet confirmed indexed.
