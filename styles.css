@@ -935,6 +935,19 @@ button:focus-visible {
     display: none;
   }
 
+  .nav-wrap.has-mcp {
+    grid-template-columns: 1fr auto auto;
+    gap: 16px;
+  }
+
+  .has-mcp .site-nav {
+    display: flex;
+  }
+
+  .has-mcp .site-nav a:not(.nav-mcp) {
+    display: none;
+  }
+
   .hero-grid {
     grid-template-columns: 1.1fr .9fr;
     gap: 42px;
