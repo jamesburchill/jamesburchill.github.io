@@ -58,8 +58,9 @@ The site uses static HTML, CSS, and JavaScript without dependency installation.
 The book page is at `https://jamesburchill.com/blind-squirrel-method/`. The separate
 `blindsquirrelmethod.com` domain forwards to this page; it does not replace the
 site's GitHub Pages custom domain. Use permanent forwarding without masking.
-The PDF download requires no registration. Update it by compiling the Desktop
-`The Blind Squirrel Method.scriv` project using PDF and the project format
+The PDF download requires no registration. The editable book source is
+`/Users/jamesburchill/clients/000/projects/blind-squirrel-method/manuscript/The Blind Squirrel Method.scriv`.
+Compile that project using PDF and the project format
 `The Blind Squirrel Method — Shareable PDF`, then replacing
 `blind-squirrel-method/the-blind-squirrel-method.pdf`. Check the exported links,
 page count and layout before publishing; update the page's file details if needed.
