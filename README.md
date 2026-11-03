@@ -91,6 +91,9 @@ fragments), immediate meta refresh, canonical, and fallback link. `/index.html`
 already canonicalizes to `/`. HTTP 301/308 consolidation would require a separate
 hosting/routing change; do not add ineffective `.htaccess` or `_redirects` files.
 
+Reviewed legacy aliases in `about/` and `vault/` use immediate HTML redirects to
+the current HTTPS homepage or Vault article. Keep these aliases out of the sitemap.
+
 After an authorized publication, verify both sitemap URLs and the parked-page
 robots directive on the live site. Then, with Search Console authorization:
 
