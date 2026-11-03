@@ -110,3 +110,21 @@ On 31 October 2026, the SEO files were published and verified live. Search
 Console accepted the new sitemap with two discovered pages. The six obsolete
 submissions above were removed; both Vault feeds were retained. The book page
 is discovered through the sitemap but is not yet confirmed indexed.
+
+## Cross-site Naming and Links
+
+Use **James Burchill** for the author and **The Vault** for the writing destination.
+**Writing** names the Vault’s `/content/` index, not a separate publication.
+The author site introduces James and his work; the Vault holds essays, field notes,
+practical guides and resources. Because Drift Happens is the drift/governance
+framework, Governing Intelligent Systems is a reading guide within the Vault,
+and Driftinel is an independent managed-service project in development.
+
+Use lowercase HTTPS URLs with trailing slashes for cross-site page links:
+`https://jamesburchill.com/`, `https://vault.jamesburchill.com/`,
+`https://becausedrifthappens.com/` and `https://driftinel.com/`.
+Use local paths within each site, and preserve existing article URLs and anchors.
+The public MCP connection guide lives at `https://jamesburchill.com/mcp/`;
+the separate MCP service address remains `https://mcp.jamesburchill.com`.
+Shared visual cues are forest green `#263d31`, ivory `#fbf8ef`, parchment
+`#e9e2d5`, muted brass `#a17f4e` and Georgia headings, with sans-serif body text.
