@@ -91,8 +91,10 @@ fragments), immediate meta refresh, canonical, and fallback link. `/index.html`
 already canonicalizes to `/`. HTTP 301/308 consolidation would require a separate
 hosting/routing change; do not add ineffective `.htaccess` or `_redirects` files.
 
-Reviewed legacy aliases in `about/` and `vault/` use immediate HTML redirects to
-the current HTTPS homepage or Vault article. Keep these aliases out of the sitemap.
+The `/about/` alias uses an immediate HTML redirect to the homepage. GitHub Pages
+forwards legacy `/vault/` paths to the Vault project domain before serving local
+files; their remaining aliases are handled in the Vault repository. Keep aliases
+out of the sitemap and keep HTTPS enforcement enabled on both Pages sites.
 
 After an authorized publication, verify both sitemap URLs and the parked-page
 robots directive on the live site. Then, with Search Console authorization:
