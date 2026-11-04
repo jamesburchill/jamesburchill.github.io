@@ -74,6 +74,14 @@ pages at desktop/mobile widths. After pushing, confirm the Pages build succeeds
 for the expected commit and verify the public result. Preserve other site sections
 and their independent documentation.
 
+## Social sharing
+
+The homepage uses `img/james-burchill-social.jpg`, a 1200 × 630 portrait-and-name
+card, for Open Graph and X large-image previews. It preserves the complete
+portrait at a smaller size with crisp text in the site’s ivory and forest-green
+palette. The on-page portrait and Person structured-data image remain
+`img/avatar.jpg`.
+
 ## Search discovery
 
 `robots.txt` permits crawling and points to `sitemap.xml`. The sitemap lists the
