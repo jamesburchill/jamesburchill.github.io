@@ -142,3 +142,14 @@ The public MCP connection guide lives at `https://jamesburchill.com/mcp/`;
 the separate MCP service address remains `https://mcp.jamesburchill.com`.
 Shared visual cues are forest green `#263d31`, ivory `#fbf8ef`, parchment
 `#e9e2d5`, muted brass `#a17f4e` and Georgia headings, with sans-serif body text.
+
+## Sharing verification — November 4, 2026
+
+The portrait-and-name sharing card was published in `780d55b`; the GitHub Pages
+deployment passed. The live homepage supplies the new 1200 × 630 JPEG through
+Open Graph and X metadata, with matching dimensions, MIME type, and image alt
+text. The on-page portrait and Person structured-data image remain unchanged.
+LinkedIn Post Inspector was refreshed and visually verified with the complete
+portrait and clear name/role text. Native Facebook and X previews were not
+inspected. No Search Console settings were changed for this site in this work,
+and no further sharing-image changes are pending.
