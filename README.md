@@ -10,6 +10,8 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 - `styles.css`, `warm-theme.css`, icons, manifest, and `img/`: shared site presentation and assets.
 - `games/spaceshooter/`: browser game with its own README.
 - `parkedproject/`: existing project page and assets.
+- `mcp/`: public MCP connection guide, including Claude custom-connector steps.
+- `mcp/privacy/`: privacy policy scoped to the public MCP service.
 - `driftinel/`: redirect to the standalone product site.
 - `blind-squirrel-method/`: ungated book page, titled cover and the PDF compiled from Scrivener.
 
@@ -156,3 +158,14 @@ LinkedIn Post Inspector was refreshed and visually verified with the complete
 portrait and clear name/role text. Native Facebook and X previews were not
 inspected. No Search Console settings were changed for this site in this work,
 and no further sharing-image changes are pending.
+
+## MCP directory preparation — November 11, 2026
+
+The MCP guide now links to a service-specific privacy policy at
+`https://jamesburchill.com/mcp/privacy/` and includes Claude custom-connector
+steps. These pages are published through the site’s established GitHub Pages
+workflow; deployment evidence is recorded in the MCP service repository’s STATUS.md.
+The service repository owns the protocol implementation, release status,
+regression checks, and Claude directory preparation checklist. Publishing the
+website does not deploy the separately hosted MCP service. No directory listing
+is claimed by these pages.
