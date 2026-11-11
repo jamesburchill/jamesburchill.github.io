@@ -16,7 +16,9 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 The homepage features the free book and its cover, followed by The Vault,
 Driftinel, and Because Drift Happens with equal emphasis. Its cream, forest green
 and muted gold palette is shared with the book page.
-It does not advertise consulting services or an engagement process.
+The navigation and contact section link to JMG’s strategic consulting offer.
+Commercial consulting and discovery enquiries go to JMG; the existing free book,
+MCP demonstration, and personal contact paths remain separate.
 The homepage links the Driftinel, Tooljar, and James Media Group role statements,
 describes the focus of each work/writing destination, and invites questions about
 writing and current projects. The Blind Squirrel Method is the only featured book; do not
@@ -132,7 +134,8 @@ Use **James Burchill** for the author and **The Vault** for the writing destinat
 The author site introduces James and his work; the Vault holds essays, field notes,
 practical guides and resources. Because Drift Happens is the drift/governance
 framework, Governing Intelligent Systems is a reading guide within the Vault,
-and Driftinel is an independent managed service for tracking email commitments.
+and Driftinel is an independent managed service operating in an invite-only
+pilot. It is not generally available.
 
 Use lowercase HTTPS URLs with trailing slashes for cross-site page links:
 `https://jamesburchill.com/`, `https://vault.jamesburchill.com/`,

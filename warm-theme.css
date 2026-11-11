@@ -51,6 +51,6 @@ a:focus-visible,button:focus-visible { outline-color:#a17f4e; }
 @media (max-width:980px) {
   .nav-wrap.has-mcp { grid-template-columns:1fr auto; gap:10px 16px; padding-block:14px; }
   .has-mcp .site-nav { grid-column:1 / -1; grid-row:2; gap:24px; }
-  .has-mcp .site-nav a.nav-vault { display:inline; }
+  .has-mcp .site-nav a.nav-vault, .has-mcp .site-nav a.nav-consulting { display:inline; }
   .has-mcp .nav-cta { grid-column:2; grid-row:1; }
 }
