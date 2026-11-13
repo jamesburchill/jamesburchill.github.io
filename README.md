@@ -136,8 +136,7 @@ Use **James Burchill** for the author and **The Vault** for the writing destinat
 The author site introduces James and his work; the Vault holds essays, field notes,
 practical guides and resources. Because Drift Happens is the drift/governance
 framework, Governing Intelligent Systems is a reading guide within the Vault,
-and Driftinel is an independent managed service operating in an invite-only
-pilot. It is not generally available.
+and Driftinel is an independent managed service with access by invitation.
 
 Use lowercase HTTPS URLs with trailing slashes for cross-site page links:
 `https://jamesburchill.com/`, `https://vault.jamesburchill.com/`,
@@ -179,3 +178,13 @@ Custom software and integration remain supporting implementation detail.
 Homepage descriptions and Person structured data reflect the same hierarchy.
 The new sharing card retains the portrait, name and professional roles and adds
 “Sharp thinking. Useful solutions.” and the three areas at a new image URL.
+
+## Problem-first consistency — November 13, 2026
+
+The homepage introduces business outcomes before implementation capabilities,
+while retaining the founder, JMG Principal & Systems Architect, Tooljar CTO and
+author roles. Work cards and business contact copy follow the same problem-first
+approach as JMG. The public MCP guide introduces useful questions and source
+material, with commercial enquiries routed to JMG; connection instructions and
+privacy terms remain separate. Homepage and MCP sharing descriptions follow
+the revised copy. The portrait-and-roles sharing card remains current.
