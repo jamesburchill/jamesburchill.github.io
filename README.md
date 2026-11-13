@@ -18,7 +18,7 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 The homepage features the free book and its cover, followed by The Vault,
 Driftinel, and Because Drift Happens with equal emphasis. Its cream, forest green
 and muted gold palette is shared with the book page.
-The navigation and contact section link to JMG’s strategic consulting offer.
+The navigation and contact section link to JMG’s Technology & AI, Automation and Monitoring offer.
 Commercial consulting and discovery enquiries go to JMG; the existing free book,
 MCP demonstration, and personal contact paths remain separate.
 The homepage links the Driftinel, Tooljar, and James Media Group role statements,
@@ -80,7 +80,7 @@ and their independent documentation.
 
 ## Social sharing
 
-The homepage uses `img/james-burchill-social.jpg`, a 1200 × 630 portrait-and-name
+The homepage uses `img/james-burchill-social-three-areas.jpg`, a 1200 × 630 portrait-and-name
 card, for Open Graph and X large-image previews. It preserves the complete
 portrait at a smaller size with crisp text in the site’s ivory and forest-green
 palette. The on-page portrait and Person structured-data image remain
@@ -169,3 +169,13 @@ The service repository owns the protocol implementation, release status,
 regression checks, and Claude directory preparation checklist. Publishing the
 website does not deploy the separately hosted MCP service. No directory listing
 is claimed by these pages.
+
+## JMG positioning alignment — November 13, 2026
+
+The personal homepage retains James's founder, Systems Architect, CTO and author
+roles, products and writing. Its business introduction, Work with me navigation
+and contact copy link to JMG's Technology & AI, Automation and Monitoring offer.
+Custom software and integration remain supporting implementation detail.
+Homepage descriptions and Person structured data reflect the same hierarchy.
+The new sharing card retains the portrait, name and professional roles and adds
+“Sharp thinking. Useful solutions.” and the three areas at a new image URL.
