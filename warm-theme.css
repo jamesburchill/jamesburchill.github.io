@@ -54,3 +54,6 @@ a:focus-visible,button:focus-visible { outline-color:#a17f4e; }
   .has-mcp .site-nav a.nav-vault, .has-mcp .site-nav a.nav-consulting { display:inline; }
   .has-mcp .nav-cta { grid-column:2; grid-row:1; }
 }
+
+/* Balance the personal introduction with the existing portrait. */
+.hero .hero-lede { font-size:clamp(18px,1.55vw,22px); line-height:1.6; letter-spacing:-.01em; }

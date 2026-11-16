@@ -196,3 +196,9 @@ The homepage introduces drift through James’s writing, products, and practical
 Homepage descriptions, Person description, and sharing metadata follow the new positioning. The new 1200×630 card retains the original portrait and name/roles with “Understanding change. Keeping intent in view.” Editable source is `img/james-burchill-social-drift.svg`; earlier sharing assets remain intact. Titles, canonical URLs, structured-data identity, sitemap, robots, redirects, book content/download, and the personal-site palette are preserved.
 
 Validation: homepage and MCP HTML, local/anchor links, JSON-LD, stable titles/canonicals, and preserved indexing/book/alias/privacy files passed checks. The portrait sharing card was visually reviewed at 1200×630. Desktop homepage/work cards and mobile homepage were inspected; homepage and MCP had no horizontal overflow at 390 pixels, with homepage images loaded. New product destinations returned HTTPS 200. Platform preview caches and search rankings were not verified.
+
+## Introduction balance — November 16, 2026
+
+Reduced the homepage introduction paragraph from the previous 21–29-pixel range to 18–22 pixels, with more comfortable line spacing, to balance the text against the existing portrait. Name, headings, portrait dimensions, and copy remain unchanged. This rule is scoped to the hero introduction; the shared stylesheet cache hash is refreshed on the homepage and book page.
+
+Validation: desktop and 390-pixel mobile layouts were inspected; the introduction renders at 22 and 18 pixels respectively, with no mobile overflow. HTML/links/JSON-LD, stable SEO fields, and unchanged homepage/book copy apart from cache hashes passed checks.
