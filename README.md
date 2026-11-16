@@ -16,9 +16,9 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 - `blind-squirrel-method/`: ungated book page, titled cover and the PDF compiled from Scrivener.
 
 The homepage features the free book and its cover, followed by The Vault,
-Driftinel, and Because Drift Happens with equal emphasis. Its cream, forest green
+Because Drift Happens, James Media Group, Driftinel, Telemetry Sentinel, and BaileyBot (waitlist). Its cream, forest green
 and muted gold palette is shared with the book page.
-The navigation and contact section link to JMG’s Technology & AI, Automation and Monitoring offer.
+The navigation and contact section link to JMG’s broad consulting, custom software, automation, and implementation services.
 Commercial consulting and discovery enquiries go to JMG; the existing free book,
 MCP demonstration, and personal contact paths remain separate.
 The homepage links the Driftinel, Tooljar, and James Media Group role statements,
@@ -80,7 +80,7 @@ and their independent documentation.
 
 ## Social sharing
 
-The homepage uses `img/james-burchill-social-three-areas.jpg`, a 1200 × 630 portrait-and-name
+The homepage uses `img/james-burchill-social-drift.jpg`, a 1200 × 630 portrait-and-name
 card, for Open Graph and X large-image previews. It preserves the complete
 portrait at a smaller size with crisp text in the site’s ivory and forest-green
 palette. The on-page portrait and Person structured-data image remain
@@ -188,3 +188,11 @@ approach as JMG. The public MCP guide introduces useful questions and source
 material, with commercial enquiries routed to JMG; connection instructions and
 privacy terms remain separate. Homepage and MCP sharing descriptions follow
 the revised copy. The portrait-and-roles sharing card remains current.
+
+## Drift alignment — November 16, 2026
+
+The homepage introduces drift through James’s writing, products, and practical systems work while retaining his name, Systems Architect/CTO/author roles, portrait, biography, featured book, personal contact, and writing destinations. Six existing-style cards connect writing, the drift framework, JMG, Driftinel (by invitation), Telemetry Sentinel, and BaileyBot (waitlist). Commercial work remains broad enough for consulting, custom software, automation, integration, and defined implementation projects. The MCP guide’s business paragraph aligns with changing source information and direct integration scoping; connection instructions and privacy terms are unchanged.
+
+Homepage descriptions, Person description, and sharing metadata follow the new positioning. The new 1200×630 card retains the original portrait and name/roles with “Understanding change. Keeping intent in view.” Editable source is `img/james-burchill-social-drift.svg`; earlier sharing assets remain intact. Titles, canonical URLs, structured-data identity, sitemap, robots, redirects, book content/download, and the personal-site palette are preserved.
+
+Validation: homepage and MCP HTML, local/anchor links, JSON-LD, stable titles/canonicals, and preserved indexing/book/alias/privacy files passed checks. The portrait sharing card was visually reviewed at 1200×630. Desktop homepage/work cards and mobile homepage were inspected; homepage and MCP had no horizontal overflow at 390 pixels, with homepage images loaded. New product destinations returned HTTPS 200. Platform preview caches and search rankings were not verified.
