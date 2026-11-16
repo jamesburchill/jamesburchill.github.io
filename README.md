@@ -202,3 +202,7 @@ Validation: homepage and MCP HTML, local/anchor links, JSON-LD, stable titles/ca
 Reduced the homepage introduction paragraph from the previous 21–29-pixel range to 18–22 pixels, with more comfortable line spacing, to balance the text against the existing portrait. Name, headings, portrait dimensions, and copy remain unchanged. This rule is scoped to the hero introduction; the shared stylesheet cache hash is refreshed on the homepage and book page.
 
 Validation: desktop and 390-pixel mobile layouts were inspected; the introduction renders at 22 and 18 pixels respectively, with no mobile overflow. HTML/links/JSON-LD, stable SEO fields, and unchanged homepage/book copy apart from cache hashes passed checks.
+
+## Broader product introduction — November 16, 2026
+
+The homepage role paragraph retains JMG Principal & Systems Architect and Tooljar CTO, then introduces the shared purpose of the product work: commitments, conditions, and follow-through, with enough notice to act on drift. The individual product cards retain Driftinel, Telemetry Sentinel, and BaileyBot links and availability labels.
