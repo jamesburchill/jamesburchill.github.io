@@ -85,13 +85,13 @@ and their independent documentation.
 
 ## Social sharing
 
-The homepage uses `img/james-burchill-social-curiosity.jpg`, a 1200 × 630
-portrait-and-name card in the current navy/teal identity, for Open Graph and X
-large-image previews. It gives the three credential phrases equal styling and
-uses “A career built on curiosity.” The on-page portrait and Person structured-data
-image remain `img/avatar.jpg`. The matching editable SVG source is
-`img/james-burchill-social-curiosity.svg`; it references the portrait beside it.
-Previous sharing assets remain available.
+The homepage uses the reviewed 1200 × 630 branded PNG at
+`img/james-burchill-social-2026-11-17.png` for Open Graph and X large-image
+previews. It retains James's original portrait, the JB mark, and equal treatment
+of Systems Architect, Entrepreneur, and Bestselling Author & Instructor. The
+matching SVG source is self-contained at
+`img/james-burchill-social-2026-11-17.svg`. The on-page portrait and Person
+structured-data image remain `img/avatar.jpg`. Earlier artwork is preserved.
 
 ## Search discovery
 
@@ -253,3 +253,16 @@ Product listings use Telemetry Sentinel, Driftinel, then BaileyBot. Product mark
 ## Publication preparation -- November 17, 2026
 
 James authorized publication of the reviewed redesign on November 17, 2026. Final checks covered the four redesigned pages at 320, 390, 768 and 1440 pixels, with no overflow or missing images. The JB header tile, original portrait and product artwork, product order, corrected illustrations, punctuation and four-decade biography are included. Both credential rows retain equal styling. The existing MCP instructions/privacy text, book content/download, redirects and indexing files remain preserved. GitHub Pages continues to publish the root of `main`; publishing this site does not deploy the MCP service.
+
+
+## Approved sharing and SEO refresh -- November 17, 2026
+
+The homepage Open Graph/X metadata now references the reviewed portrait/credentials
+PNG and self-contained SVG source under `img/james-burchill-social-2026-11-17.*`,
+with correct PNG type, 1200 × 630 dimensions and artwork-specific alternative text.
+The approved homepage title, description, equal credentials and Person schema
+remain unchanged. MCP/privacy and book pages retain their distinct metadata,
+technical instructions, canonical URLs and book download. Static checks confirm
+unchanged bodies, working local image paths and metadata/schema validity.
+GitHub Pages publication does not deploy the MCP service or refresh external
+platform caches.
