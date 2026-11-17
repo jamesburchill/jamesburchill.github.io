@@ -1,13 +1,15 @@
 # jamesburchill.com
 
-Personal website for James Burchill: founder of Driftinel, Systems Architect,
-CTO, and bestselling author. GitHub Pages publishes this repository at
+Personal website for James Burchill: Systems Architect, Entrepreneur, and
+Bestselling Author & Instructor, with a balanced introduction to his systems work,
+products, writing, and frameworks. GitHub Pages publishes this repository at
 [https://jamesburchill.com/](https://jamesburchill.com/).
 
 ## Contents
 
 - `index.html`: professional introduction, biography, work/writing links, and contact.
-- `styles.css`, `warm-theme.css`, icons, manifest, and `img/`: shared site presentation and assets.
+- `redesign.css`: current shared navy/teal editorial design system.
+- `styles.css`, `warm-theme.css`: retained earlier presentation assets. The four current pages use `redesign.css`, with `blind-squirrel-method/book.css` for the book layout. Icons, manifest, and `img/` hold site assets.
 - `games/spaceshooter/`: browser game with its own README.
 - `parkedproject/`: existing project page and assets.
 - `mcp/`: public MCP connection guide, including Claude custom-connector steps.
@@ -15,16 +17,19 @@ CTO, and bestselling author. GitHub Pages publishes this repository at
 - `driftinel/`: redirect to the standalone product site.
 - `blind-squirrel-method/`: ungated book page, titled cover and the PDF compiled from Scrivener.
 
-The homepage features the free book and its cover, followed by The Vault,
-Because Drift Happens, James Media Group, Driftinel, Telemetry Sentinel, and BaileyBot (waitlist). Its cream, forest green
-and muted gold palette is shared with the book page.
-The navigation and contact section link to JMG’s broad consulting, custom software, automation, and implementation services.
-Commercial consulting and discovery enquiries go to JMG; the existing free book,
-MCP demonstration, and personal contact paths remain separate.
-The homepage links the Driftinel, Tooljar, and James Media Group role statements,
-describes the focus of each work/writing destination, and invites questions about
-writing and current projects. The Blind Squirrel Method is the only featured book; do not
-add earlier book titles or a catalogue without a new editorial decision.
+The homepage gives Systems Architect, Entrepreneur, and Bestselling Author & Instructor
+equal prominence. Its systems/entrepreneurship section introduces JMG, Driftinel,
+Telemetry Sentinel, and BaileyBot, followed by substantial links to The Vault and
+Because Drift Happens. A navy strip links to the existing public MCP guide.
+Warm-white reading surfaces, midnight navy, deep teal on light backgrounds, and
+bright teal on navy connect the personal identity with JMG. James's real portrait
+and serif name/heading treatment retain the site's personal, editorial character.
+
+The homepage no longer has a book/course portfolio section. The existing free
+book page, artwork, PDF download, resource links, routes, redirects, and MCP
+connection remain available. The book is also linked in the expanded biography.
+Commercial enquiries go to JMG; direct personal correspondence goes to James.
+The About section retains James's JMG and Tooljar roles and teaching background.
 
 ## Driftinel website separation
 
@@ -80,11 +85,13 @@ and their independent documentation.
 
 ## Social sharing
 
-The homepage uses `img/james-burchill-social-drift.jpg`, a 1200 × 630 portrait-and-name
-card, for Open Graph and X large-image previews. It preserves the complete
-portrait at a smaller size with crisp text in the site’s ivory and forest-green
-palette. The on-page portrait and Person structured-data image remain
-`img/avatar.jpg`.
+The homepage uses `img/james-burchill-social-curiosity.jpg`, a 1200 × 630
+portrait-and-name card in the current navy/teal identity, for Open Graph and X
+large-image previews. It gives the three credential phrases equal styling and
+uses “A career built on curiosity.” The on-page portrait and Person structured-data
+image remain `img/avatar.jpg`. The matching editable SVG source is
+`img/james-burchill-social-curiosity.svg`; it references the portrait beside it.
+Previous sharing assets remain available.
 
 ## Search discovery
 
@@ -144,8 +151,9 @@ Use lowercase HTTPS URLs with trailing slashes for cross-site page links:
 Use local paths within each site, and preserve existing article URLs and anchors.
 The public MCP connection guide lives at `https://jamesburchill.com/mcp/`;
 the separate MCP service address remains `https://mcp.jamesburchill.com`.
-Shared visual cues are forest green `#263d31`, ivory `#fbf8ef`, parchment
-`#e9e2d5`, muted brass `#a17f4e` and Georgia headings, with sans-serif body text.
+Current JCB visual cues are midnight navy `#061525`, warm white `#F7F5EF`,
+deep teal `#006B64` on light surfaces, and bright teal `#00D7BC` on navy.
+Georgia headings and sans-serif body text retain the personal editorial treatment.
 
 ## Sharing verification — November 4, 2026
 
@@ -206,3 +214,42 @@ Validation: desktop and 390-pixel mobile layouts were inspected; the introductio
 ## Broader product introduction — November 16, 2026
 
 The homepage role paragraph retains JMG Principal & Systems Architect and Tooljar CTO, then introduces the shared purpose of the product work: commitments, conditions, and follow-through, with enough notice to act on drift. The individual product cards retain Driftinel, Telemetry Sentinel, and BaileyBot links and availability labels.
+
+## Redesign implementation -- November 17, 2026
+
+Implemented the approved JCB redesign locally for review, without publication.
+The homepage, book page, MCP guide, and MCP privacy page share navigation, footer,
+colours, typography, focus treatments, and responsive spacing. Existing book and
+MCP main content and content links are preserved; technical connection settings
+and privacy terms are unchanged. The biography expands with native accessible
+details/summary controls. Legacy homepage anchor IDs remain available.
+
+Use the existing local-preview command above. No framework, dependency, remote
+font, tracking, signup flow, or MCP endpoint change was introduced.
+`redesign.css` is loaded with its first 12 SHA-256 characters as the cache version;
+refresh those references in all four pages when changing that stylesheet.
+
+Validation: local HTML/assets/anchors and JSON-LD checks pass. All four redesigned
+pages were checked at 390, 768, and 1440 pixels for image loading and horizontal
+overflow. Desktop/mobile screenshots were reviewed. Both credential rows have
+the same computed font size, weight, and colour at each checked viewport.
+MCP guide/privacy and book main text and content links match the previous source.
+Live deployment, MCP protocol execution, platform preview caches, and search
+rankings were not tested in this visual redesign.
+
+
+## Graphic alignment correction -- November 17, 2026
+
+Removed the decorative period after James Burchill from the shared header, footer, homepage name and social artwork. The JMG graphic now connects only between icon frames, with centred stacked layers. The Vault illustration rotates each sheet and its text together; the foreground sheet masks the sheets behind it. The framework illustration shares exact curve coordinates between its lines and shaded region, with labels clear of the paths.
+
+The shared header now uses an accessible home link with a serif JB monogram tile (`img/jb-monogram.svg`), leaving the full name prominent in the homepage hero and footer.
+
+
+## Product brand assets and order -- November 17, 2026
+
+Product listings use Telemetry Sentinel, Driftinel, then BaileyBot. Product marks are copied unchanged from their owning website sources: Telemetry Sentinel's `telemetrysentinel-logo.png`, Driftinel's `icon.svg` (local name `driftinel-mark.svg`), and BaileyBot's `bailey.svg`. The radio-tower brand mark replaces the generic signal icon in product branding; conceptual signal and workflow illustrations remain decorative examples.
+
+
+## Publication preparation -- November 17, 2026
+
+James authorized publication of the reviewed redesign on November 17, 2026. Final checks covered the four redesigned pages at 320, 390, 768 and 1440 pixels, with no overflow or missing images. The JB header tile, original portrait and product artwork, product order, corrected illustrations, punctuation and four-decade biography are included. Both credential rows retain equal styling. The existing MCP instructions/privacy text, book content/download, redirects and indexing files remain preserved. GitHub Pages continues to publish the root of `main`; publishing this site does not deploy the MCP service.
