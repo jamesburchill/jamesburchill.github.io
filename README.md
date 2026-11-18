@@ -1,6 +1,6 @@
 # jamesburchill.com
 
-Personal website for James Burchill: Systems Architect, Entrepreneur, and
+Personal website for James Burchill: Systems Architect and
 Bestselling Author & Instructor, with a balanced introduction to his systems work,
 products, writing, and frameworks. GitHub Pages publishes this repository at
 [https://jamesburchill.com/](https://jamesburchill.com/).
@@ -17,8 +17,8 @@ products, writing, and frameworks. GitHub Pages publishes this repository at
 - `driftinel/`: redirect to the standalone product site.
 - `blind-squirrel-method/`: ungated book page, titled cover and the PDF compiled from Scrivener.
 
-The homepage gives Systems Architect, Entrepreneur, and Bestselling Author & Instructor
-equal prominence. Its systems/entrepreneurship section introduces JMG, Driftinel,
+The homepage gives Systems Architect and Bestselling Author & Instructor
+equal prominence. Its Systems & Products section introduces JMG, Driftinel,
 Telemetry Sentinel, and BaileyBot, followed by substantial links to The Vault and
 Because Drift Happens. A navy strip links to the existing public MCP guide.
 Warm-white reading surfaces, midnight navy, deep teal on light backgrounds, and
@@ -86,11 +86,11 @@ and their independent documentation.
 ## Social sharing
 
 The homepage uses the reviewed 1200 × 630 branded PNG at
-`img/james-burchill-social-2026-11-17.png` for Open Graph and X large-image
+`img/james-burchill-social-2026-11-18.png` for Open Graph and X large-image
 previews. It retains James's original portrait, the JB mark, and equal treatment
-of Systems Architect, Entrepreneur, and Bestselling Author & Instructor. The
+of Systems Architect and Bestselling Author & Instructor. The
 matching SVG source is self-contained at
-`img/james-burchill-social-2026-11-17.svg`. The on-page portrait and Person
+`img/james-burchill-social-2026-11-18.svg`. The on-page portrait and Person
 structured-data image remain `img/avatar.jpg`. Earlier artwork is preserved.
 
 ## Search discovery
