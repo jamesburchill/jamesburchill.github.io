@@ -86,11 +86,11 @@ and their independent documentation.
 ## Social sharing
 
 The homepage uses the reviewed 1200 × 630 branded PNG at
-`img/james-burchill-social-2026-11-18.png` for Open Graph and X large-image
-previews. It retains James's original portrait, the JB mark, and equal treatment
+`img/james-burchill-social-2026-11-20.png` for Open Graph and X large-image
+previews. It uses James's updated portrait, the JB mark, and equal treatment
 of Systems Architect and Bestselling Author & Instructor. The
 matching SVG source is self-contained at
-`img/james-burchill-social-2026-11-18.svg`. The on-page portrait and Person
+`img/james-burchill-social-2026-11-20.svg`. The on-page portrait and Person
 structured-data image remain `img/avatar.jpg`. Earlier artwork is preserved.
 
 ## Search discovery
