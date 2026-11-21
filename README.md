@@ -18,9 +18,9 @@ products, writing, and frameworks. GitHub Pages publishes this repository at
 - `blind-squirrel-method/`: ungated book page, titled cover and the PDF compiled from Scrivener.
 
 The homepage gives Systems Architect and Bestselling Author & Instructor
-equal prominence. Its Systems & Products section introduces JMG, Driftinel,
-Telemetry Sentinel, and BaileyBot, followed by substantial links to The Vault and
-Because Drift Happens. A navy strip links to the existing public MCP guide.
+equal prominence. Its Systems & Products section directs visitors to James Media
+Group for products and consulting, followed by links to The Vault and Because
+Drift Happens. A navy strip links to the existing public MCP guide.
 Warm-white reading surfaces, midnight navy, deep teal on light backgrounds, and
 bright teal on navy connect the personal identity with JMG. James's real portrait
 and serif name/heading treatment retain the site's personal, editorial character.
